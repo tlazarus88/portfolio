@@ -1,0 +1,146 @@
+/* Color palette */
+
+:root {
+  --soft-green: #76d275;
+  --deep-green: #00701a;
+  --white: #f2f2f2;
+  --soft-green-two: #63bf66;
+  --dark-pastel-green-two: #54a857;
+  --dark-pastel-green: #57b25a;
+  --mid-green: #43a047;
+  --pinkish-grey: #cfcfcf;
+}
+
+/* Text styles */
+
+.H1-Mobile {
+  font-family: Geomanist;
+  font-size: 121px;
+  text-align: center;
+  color: #000000;
+}
+
+.H1-Desktop {
+  font-family: Geomanist;
+  font-size: 81px;
+  text-align: center;
+  color: #000000;
+}
+
+.H2-Desktop {
+  font-family: Geomanist;
+  font-size: 54px;
+  text-align: center;
+  color: #000000;
+}
+
+.H2-Mobile {
+  font-family: Geomanist;
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.H3-Desktop {
+  font-family: Geomanist;
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.Pull-Quote {
+  font-family: Geomanist;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.H4-Desktop {
+  font-family: Geomanist;
+  font-size: 24px;
+  line-height: 0.83;
+  text-align: center;
+  color: #000000;
+}
+
+.H3-Mobile {
+  font-family: Geomanist;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.Counter {
+  font-family: Geomanist;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.H5-Desktop {
+  font-family: Geomanist;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.Tile-Title {
+  font-family: SourceSansPro;
+  font-size: 20px;
+  line-height: 0.65;
+  text-align: center;
+  color: #000000;
+}
+
+.Body-Copy {
+  font-family: Geomanist;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.H4-Mobile {
+  font-family: Geomanist;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #000000;
+}
+
+.Body-Copy-Mobile {
+  font-family: Geomanist;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #000000;
+}
+
+caption {
+  font-family: Geomanist;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+
+.H5-Mobile {
+  font-family: Geomanist;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+}
+
+body {
+	background-color: var(--soft-green, #76D275);
+	transition: background-color .5s ease-out; 
+}
+#intro,#now,#then,#about-me,#connect {
+	width: 100%;
+	height: 100vh;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
