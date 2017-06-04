@@ -2,16 +2,22 @@
 
 jQuery(document).ready(function($) {
 
-scrollIntervalID = setInterval(bgColor, 10);
+$(window).on("scroll touchmove", function() {
+		if ($(document).scrollTop() >= $("#intro").position().top) {
+				$('body').css('background', $("#intro").attr("data-color"));
+		};
+		if ($(document).scrollTop() > $("#now").position().top) {
+				$('body').css('background', $("#now").attr("data-color"))
+		};
+		if ($(document).scrollTop() > $("#then").position().top) {
+				$('body').css('background', $("#then").attr("data-color"))
+		};
+		if ($(document).scrollTop() > $("#about-me").position().top) {
+				$('body').css('background', $("#about-me").attr("data-color"))
+		};
+		if ($(document).scrollTop() >= $("#connect").position().top) {
+				$('body').css('background', $("#connect").attr("data-color"))
+		};
+});
 
-function bgColor() {
-	var topNow = $('#now').offset().top;
-
-	if ($(window).scrollTop() >= (topNow)) {
-		$('body').css('background-color','var(--soft-green-two, #63bf66');
-	} else {
-		$('body').css('background-color','var(--soft-green, #76D275');
-
-	}
-}
 });
