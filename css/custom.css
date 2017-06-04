@@ -107,12 +107,15 @@ caption {
 	color: #ffffff;
 }
 
+html {
+	width: 100%;
+}
 
 body {
 	background-color: var(--soft-green, #76D275);
 	transition: background-color .5s ease-out;
-	height: 100vh;
-	padding: 0 15%;
+	/*height: 100vh;*/
+	overflow-x: hidden;
 }
 
 #intro,#now,#then,#about-me,#connect {
@@ -124,6 +127,48 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 59px;
+	z-index: +2;
+	transition: background-color .5s ease-out;
+	
+}
+
+body.project nav {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	background-color: var(--white);
+}
+
+#nav-logo {
+	width: 37px;
+	height: 37px;
+	float: left;
+	margin-left: 15px;
+	margin-right: 10px;
+	margin: 11px 10px 11px 15px;
+}
+
+nav p {
+	float: left;
+	font-family: 'geomanistregular';
+	font-size: 16px;
+	line-height: 1.25;
+	color: #000000;
+	margin: 18px 0;
+}
+
+#hamburger {
+	width: 36px;
+	float: right;
+	margin: 15px;
+}
+
+#hamburger li {
+	width: 100%;
+	height: 6px;
+	margin-bottom: 6px;
+	border-radius: 10px;
+	background-color: var(--deep-green);
 }
 
 .content-container {
@@ -131,4 +176,10 @@ nav {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	width: 70%;
+	margin-top: 59px;
+}
+
+#intro .content-container {
+	margin-top: 0px;
 }
