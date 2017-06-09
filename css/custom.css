@@ -63,6 +63,7 @@ h3 {
 	line-height: 1.25;
 	text-align: center;
 	color: #000000;
+	margin-bottom: 23px;
 }
 
 
@@ -199,7 +200,6 @@ nav p {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 70%;
-	margin-top: 59px;
 	background-position: fixed;
 }
 
@@ -235,6 +235,35 @@ nav p {
 	width: 224px;
 	height: 224px;
 }
+
+/* Connect */
+
+#connect h4{
+	margin-bottom: 26px;
+}
+
+#connect-options {
+	margin: 0 auto;
+}
+
+#connect-options li {
+	margin-bottom: 26px;
+	text-align: left;
+}
+
+.connect-icon {
+	display: inline-block;
+	width: 45px;
+	height: auto;
+	margin-right: 18px;
+}
+
+#connect h5 {
+	display: inline-block;
+	color: var(--white, #ffffff);
+	text-align: left;
+}
+
 
 /* Animations */
 .bounce {
