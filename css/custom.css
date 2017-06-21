@@ -244,6 +244,7 @@ nav p {
 
 #connect-options {
 	margin: 0 auto;
+	width: 60%;
 }
 
 #connect-options li {
@@ -253,15 +254,18 @@ nav p {
 
 .connect-icon {
 	display: inline-block;
-	width: 45px;
+	width: 45%;
 	height: auto;
+	min-height: 45px;
 	margin-right: 18px;
+	vertical-align: middle;
 }
 
 #connect h5 {
 	display: inline-block;
 	color: var(--white, #ffffff);
 	text-align: left;
+	vertical-align: middle;
 }
 
 
