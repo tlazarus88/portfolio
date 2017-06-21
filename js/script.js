@@ -2,6 +2,11 @@
 
 jQuery(document).ready(function($) {
 
+// Down Arrow Functionality	
+$('#down-directional').click(function(){
+	$.fn.fullpage.moveSectionDown();
+});
+
 // Call Fullpage Plugin
 $('#fullpage').fullpage({
 
@@ -58,7 +63,10 @@ $('#fullpage').fullpage({
 
 		};
 
+		
+
 	}
+	
 });
 
 });
