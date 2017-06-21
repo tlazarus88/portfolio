@@ -41,6 +41,7 @@ $('#fullpage').fullpage({
 			$('body').css('background', $("#connect").attr("data-color"))
 			$('nav').css('background', $("#connect").attr("data-color"));
 			$('#down-directional').css('visibility', 'hidden');
+
 		}
 		else if(index == 4 && direction == 'up'){
 			$('body').css('background', $("#then").attr("data-color"))
@@ -53,6 +54,8 @@ $('#fullpage').fullpage({
 			$('nav').css('background', $("#about-me").attr("data-color"));
 			$('#down-label').text('Connect');
 			$('#down-directional').css('visibility', 'visible');
+
+
 		};
 
 	}
