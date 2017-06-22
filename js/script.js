@@ -2,6 +2,14 @@
 
 jQuery(document).ready(function($) {
 
+// Hamburger Animation
+$(document).ready(function(){
+	$('#hamburger').click(function(){
+		$(this).toggleClass('open');
+		$('#hamburger-menu').fadeToggle("fast");
+	});
+});
+
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
 	$.fn.fullpage.moveSectionDown();
