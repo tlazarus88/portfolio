@@ -296,6 +296,34 @@ nav p {
 	height: 224px;
 }
 
+/* Then */
+
+.then-buttons {
+	width: 100%;
+}
+
+.then-buttons li {
+	display: inline-block;
+	width: 32%;
+	min-width: 70px;
+	height: 20px;
+	border-radius: 4px;
+	background-color: var(--soft-green, #76d275);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	line-height: 1.8;
+	color: var(--deep-green, #00701a);
+	cursor: pointer;
+}
+
+.then-buttons li.active {
+	color: black;
+	background-color: var(--white, #f2f2f2);
+	box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	padding-top: 1px;	
+}
+
+
 /* Connect */
 
 #connect h4{
