@@ -314,6 +314,7 @@ nav p {
 	line-height: 1.8;
 	color: var(--deep-green, #00701a);
 	cursor: pointer;
+	margin-bottom: 12px;
 }
 
 .then-buttons li.active {
@@ -323,6 +324,26 @@ nav p {
 	padding-top: 1px;	
 }
 
+.x-scroll-container {
+	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 210px;
+}
+
+.small-tile-container {
+	float: left;
+	display: inline-block;
+	margin-right: 10px;
+	width: 44%;
+}
+
+.small-tile {
+	width: 100%%;
+	padding-top: 100%;
+	margin-bottom: 10px;
+	background-color: var(--white, #f2f2f2);
+}
 
 /* Connect */
 
@@ -375,6 +396,81 @@ footer h4, footer p.caption {
 
 #connect footer h4 {
 	margin-bottom: 4px;
+}
+
+/* Project Page Styles */
+
+.project {
+	background-color: var(--white, #ffffff);
+	margin-top: 59px;
+}
+
+.project section {
+	max-width: 900px;
+	height: 100vh;
+}
+
+.project-intro img {
+	width: 100%;
+}
+
+.project h3 {
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.project h4 {
+	color: var(--mid-green, #43a047);
+}
+
+.ext-link-icon {
+	width: 40px;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+.project p {
+	margin: 0 auto;
+	margin-top: 2%;
+	max-width: 70%;
+}
+
+.project .mobile-img {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.project-mobile-pair p, .project-single-element {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.project-single-element img {
+	width: 100%;
+	height: auto;
+}
+
+.project div.hr {
+	margin: 0 auto;
+	width: 50%;
+	height: 6px;
+	border-radius: 26px;
+	background-color: var(--deep-green, #00701a);
+}
+
+/* Parallax Backgrounds */
+
+div.parallax_bg {
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#new_gold_rush_plx_bg {
+	background-image: url("../img/new_gold_rush/california_story.jpg")
 }
 
 

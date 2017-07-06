@@ -18,6 +18,9 @@ $('#down-directional').click(function(){
 // Call Fullpage Plugin
 $('#fullpage').fullpage({
 
+	// Enable Horizontal Scrolling
+	normalScrollElements: '#then-scroll-container';
+
 	// Background Color Transition
 	onLeave: function(index, nextIndex, direction){
 		var leavingSection = $(this);
