@@ -270,12 +270,20 @@ nav p, .project nav p {
 	margin-top: 0px;
 }
 
+/* Down Arrow */
+
 #down-directional {
 	position: fixed;
 	bottom: 46px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
+}
+
+.project #down-directional {
+	position: relative;
+	bottom: 0;
+	z-index: 1;
 }
 
 #down-label {
@@ -384,7 +392,7 @@ nav p, .project nav p {
 
 .project {
 	background-color: var(--white, #ffffff);
-	margin-top: 59px;
+	padding-top: 59px;
 }
 
 .project section {
@@ -393,6 +401,7 @@ nav p, .project nav p {
 
 .project-intro {
 	height: 100vh;
+	margin-bottom: -59px;
 }
 
 .project-intro img {
@@ -426,14 +435,19 @@ nav p, .project nav p {
 	margin: 0 auto;
 }
 
-.project-mobile-pair p, .project-single-element {
+.project-mobile-pair p, .project-single-element p {
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
 
 .project-single-element img {
-	width: 100%;
+	width: 90%;
 	height: auto;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	
+
 }
 
 .project div.hr {
@@ -442,6 +456,7 @@ nav p, .project nav p {
 	height: 6px;
 	border-radius: 26px;
 	background-color: var(--deep-green, #00701a);
+	display: none;
 }
 
 /* Footer */
@@ -454,6 +469,7 @@ footer {
 	bottom: 0;
 	z-index: +3;
 	text-align: center;
+	position: absolute;
 }
 
 footer h4, footer p.caption {
@@ -466,6 +482,9 @@ footer h4, footer p.caption {
 	margin-bottom: 4px;
 }
 
+.footer-connect {
+	position: relative;
+}
 .footer-connect h4 {
 	color: var(--white, #ffffff);
 }
@@ -497,14 +516,9 @@ footer h4, footer p.caption {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-/*	background-image: url("../img/new_gold_rush/california_story.jpg")
-*/}
+}
 
-/*#new_gold_rush_plx_bg {
-	background-image: url("../img/new_gold_rush/california_sq_slideshow")
-}*/
-
-.bg-test {
+#plx-bg-gold-rush {
 	background-image: url("../img/new_gold_rush/california_story.jpg")
 }
 
