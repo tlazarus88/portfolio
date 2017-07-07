@@ -145,6 +145,9 @@ body {
 	position: relative;
 }
 
+
+/* Navigation */
+
 nav {
 	position: fixed;
 	top: 0;
@@ -158,7 +161,7 @@ nav {
 
 body.project nav {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-	background-color: var(--white);
+	background-color: var(--white, #ffffff);
 }
 
 #nav-logo {
@@ -170,7 +173,7 @@ body.project nav {
 	margin: 11px 10px 11px 15px;
 }
 
-nav p {
+nav p, .project nav p {
 	float: left;
 	font-family: 'geomanistregular';
 	font-size: 16px;
@@ -377,27 +380,6 @@ nav p {
 	vertical-align: middle;
 }
 
-footer {
-	background-color: rgba(0,0,0,1);
-	width: 100%;
-	height: auto;
-	padding: 10px 0px;
-	position: absolute;
-	bottom: 0;
-	z-index: +3;
-	display: hidden;
-}
-
-footer h4, footer p.caption {
-	color: var(--white, #ffffff);
-	width: 70%;
-	margin: 0 auto;
-}
-
-#connect footer h4 {
-	margin-bottom: 4px;
-}
-
 /* Project Page Styles */
 
 .project {
@@ -407,6 +389,9 @@ footer h4, footer p.caption {
 
 .project section {
 	max-width: 900px;
+}
+
+.project-intro {
 	height: 100vh;
 }
 
@@ -459,19 +444,72 @@ footer h4, footer p.caption {
 	background-color: var(--deep-green, #00701a);
 }
 
+/* Footer */
+
+footer {
+	background-color: rgba(0,0,0,1);
+	width: 100%;
+	height: auto;
+	padding: 10px 0px;
+	bottom: 0;
+	z-index: +3;
+	text-align: center;
+}
+
+footer h4, footer p.caption {
+	color: var(--white, #ffffff);
+	width: 70%;
+	margin: 0 auto;
+}
+
+#connect footer h4 {
+	margin-bottom: 4px;
+}
+
+.footer-connect h4 {
+	color: var(--white, #ffffff);
+}
+
+.footer-connect #connect-options {
+	margin: 5px auto;
+	width: 60%;
+}
+
+.footer-connect #connect-options li {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 8px;
+	width: 22px;
+	height: 100%;
+}
+
+.footer-connect li#e-mail-footer {
+	width: 35px;
+}
+
 /* Parallax Backgrounds */
 
-div.parallax_bg {
+
+
+.parallax_background {
 	width: 100%;
 	height: 100vh;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-}
+/*	background-image: url("../img/new_gold_rush/california_story.jpg")
+*/}
 
-#new_gold_rush_plx_bg {
+/*#new_gold_rush_plx_bg {
+	background-image: url("../img/new_gold_rush/california_sq_slideshow")
+}*/
+
+.bg-test {
 	background-image: url("../img/new_gold_rush/california_story.jpg")
 }
+
+
+
 
 
 /* Animations */
