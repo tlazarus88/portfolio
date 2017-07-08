@@ -279,21 +279,56 @@ nav p, .project nav p {
 	margin-top: 20px;
 }
 
+#hamburger-menu .now-hamburger-container {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 16px;
+	margin-bottom: -10px;
+}
+
+#hamburger-menu ul.now-hamburger-container li.now-hamburger-tile {
+	display: inline;
+}
+
+#hamburger-menu ul.now-hamburger-container li.now-hamburger-tile:nth-child(2) {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.now-hamburger-image {
+	width: 30%;
+}
+
+#hamburger-menu .then-buttons {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 16px;
+}
+
+#hamburger-menu .then-buttons li {
+	margin-bottom: 0px;
+}
+
 #hamburger-menu #connect-options {
-	margin: 5px auto;
-	width: 60%;
+	margin: 16px auto;
+	width: 100%;
+	text-align: center;
 }
 
 #hamburger-menu #connect-options li {
 	display: inline-block;
 	margin-bottom: 0px;
 	margin-right: 8px;
-	width: 22px;
+	width: 45px;
 	height: 100%;
 }
 
 #hamburger-menu li#e-mail-footer {
-	width: 35px;
+	width: 68px;
+}
+
+#hamburger-menu footer {
+	background-color: rgba(0,0,0,0);
 }
 
 .content-container {
@@ -359,19 +394,27 @@ nav p, .project nav p {
 	height: 20px;
 	border-radius: 4px;
 	background-color: var(--soft-green, #76d275);
-	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	cursor: pointer;
+	margin-bottom: 12px;
+	box-shadow: 0px 3px 0px 0px #00701a;
+}
+
+.then-buttons li p.caption {
 	font-size: 11px;
 	line-height: 1.8;
 	color: var(--deep-green, #00701a);
-	cursor: pointer;
-	margin-bottom: 12px;
 }
 
 .then-buttons li.active {
-	color: black;
 	background-color: var(--white, #f2f2f2);
-	box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-	padding-top: 1px;	
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 1);
+	padding-top: 1px;
+	height: 22px	
+}
+
+.then-buttons li.active p.caption {
+	color: black;
 }
 
 .x-scroll-container {
