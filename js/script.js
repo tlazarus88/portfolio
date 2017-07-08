@@ -2,22 +2,30 @@
 
 jQuery(document).ready(function($) {
 
-// Hamburger Animation
-$(document).ready(function(){
-	$('#hamburger').click(function(){
-		$(this).toggleClass('open');
-		$('#hamburger-menu').fadeToggle("fast");
-	});
-});
-
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
 	$.fn.fullpage.moveSectionDown();
 });
 
+// Hamburger Animation
+$(document).ready(function(){
+	
+	$('#hamburger').click(function(){
+		$(this).toggleClass('open');
+		$('#hamburger-menu').fadeToggle("fast");
+	});
+
+	// Close Hamburger on Internal Links
+
+	$('.hamburger-link-home').click(function(){
+		$('#hamburger').toggleClass('open');
+		$('#hamburger-menu').fadeToggle("fast");
+	});
+
+});
+
 // Call Fullpage Plugin
 $('#fullpage').fullpage({
-
 
 	// Background Color Transition
 	onLeave: function(index, nextIndex, direction){
@@ -69,13 +77,19 @@ $('#fullpage').fullpage({
 			$('#down-label').text('Connect');
 			$('#down-directional').css('visibility', 'visible');
 
-
-		};
+		
+	};
+	
+	// Anchor Link Manipulation
+	anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
 
 		
 
 	}
 	
 });
+
+
+
 
 });
