@@ -483,6 +483,8 @@ nav p, .project nav p {
 }
 
 .project section.project-intro {
+	height: 100vh;
+	margin-bottom: -59px;
 }
 
 .project-intro img {
@@ -574,13 +576,6 @@ nav p, .project nav p {
 	display: inline-block;	
 	width: 45%;
 	margin-bottom: 18px;
-	visibility: hidden;
-}
-
-.more-work-tile.animated {
-	-webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-	visibility: visible;
 }
 
 .more-work-tile:nth-child(even) {
