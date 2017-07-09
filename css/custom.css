@@ -570,6 +570,13 @@ nav p, .project nav p {
 	width: 70%;
 	text-align: center;
 	margin: 0 auto;
+	visibility: hidden;
+}
+
+.more-work-container.animated {
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	visibility: visible;
 }
 
 .more-work-tile {
