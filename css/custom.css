@@ -479,9 +479,10 @@ nav p, .project nav p {
 
 .project section {
 	max-width: 900px;
+	margin: 0 auto;
 }
 
-.project-intro {
+.project section.project-intro {
 	height: 100vh;
 	margin-bottom: -59px;
 }
@@ -515,6 +516,15 @@ nav p, .project nav p {
 	display: block;
 	width: 150px;
 	margin: 0 auto;
+	-webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.project .mobile-img.animated {
+    visibility: visible;
 }
 
 .project-mobile-pair p, .project-single-element p {
@@ -528,6 +538,13 @@ nav p, .project nav p {
 	display: block;
 	margin: 0 auto;
 	margin-top: 20px;
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+	visibility: hidden;
+}
+
+.project-single-element img.animated {
+	visibility: visible;
 }
 
 .project div.hr {
