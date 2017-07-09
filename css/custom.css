@@ -266,6 +266,7 @@ nav p, .project nav p {
 	height: 100vh;
 	z-index: 3;
 	display: none;
+	top: 0;
 }
 
 #hamburger-logo {
