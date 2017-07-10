@@ -60,9 +60,19 @@ function onViewport(el, elClass, offset, callback) {
 }
 
 	// Element Animations
-	onViewport(".mobile-img", "animated fadeInUp", 500);
-	onViewport(".desktop-img", "animated fadeInUp", 500);
-	onViewport(".more-work-container", "animated fadeInUp", 500);
+
+	// Mobile Animations 
+	if($(window).width() <= 700){
+		onViewport(".mobile-img", "animated fadeInUp", 500);
+		onViewport(".desktop-img", "animated fadeInUp", 500);
+		onViewport(".more-work-container", "animated fadeInUp", 500);
+	} else {
+	// Desktop Animations
+		onViewport(".mobile-img", "animated fadeInUp", 500);
+		onViewport(".desktop-img", "animated fadeInUp", 900);
+		onViewport(".more-work-container", "animated fadeInUp", 1000);
+	}
+	
 
 // Call Fullpage Plugin
 $('#fullpage').fullpage({

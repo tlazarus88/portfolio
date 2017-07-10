@@ -106,6 +106,8 @@ p {
 	color: #000000;
 	text-transform: uppercase;
 	margin-top: 8px;
+	width: 100%;
+	max-width: 100%;
 }
 
 .counter {
@@ -481,6 +483,7 @@ nav p, .project nav p {
 .project section {
 	max-width: 900px;
 	margin: 0 auto;
+	clear: both;
 }
 
 .project section.project-intro {
@@ -488,8 +491,17 @@ nav p, .project nav p {
 	margin-bottom: -59px;
 }
 
-.project-intro img {
+.project-intro .intro-img {
 	width: 100%;
+	height: 200px;
+	background-position: center center;
+	background-size: cover;
+}
+
+/* Project Intro Images */
+
+#new_gold_rush_project div.intro-img {
+	background-image: url("../img/new_gold_rush/gold_rush_header.jpg");
 }
 
 .project h3 {
@@ -533,7 +545,7 @@ nav p, .project nav p {
 	margin-bottom: 15px;
 }
 
-.project-single-element img {
+.project img.desktop-img {
 	width: 90%;
 	height: auto;
 	display: block;
@@ -544,13 +556,19 @@ nav p, .project nav p {
 	visibility: hidden;
 }
 
-.project-single-element img.animated {
+.project img.desktop-img.animated {
 	visibility: visible;
 }
 
+.project img.desktop-img.mobile-hidden {
+	display: none;
+	visibility: hidden;
+}
+
 .project div.hr {
-	margin: 0 auto;
-	width: 50%;
+	margin-left: 15%;
+	margin-bottom: 40px;
+	width: 25%;
 	height: 6px;
 	border-radius: 26px;
 	background-color: var(--deep-green, #00701a);
@@ -563,7 +581,6 @@ nav p, .project nav p {
 }
 
 .more-work h4 {
-	color: black;
 	margin-bottom: 10px;
 }
 
@@ -650,12 +667,162 @@ footer h4, footer p.caption {
 	height: 100vh;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 }
 
 #plx-bg-gold-rush {
 	background-image: url("../img/new_gold_rush/california_story.jpg")
 }
+
+/* Responsive Design */
+
+/* Mobile Medium */
+@media only screen and (min-width: 375px) {
+	.project-intro .intro-img {
+		height: 300px;
+	}
+}
+
+/* Mobile Large */
+@media only screen and (min-width: 376px) {
+	.project-intro .intro-img {
+		height: 325px;
+	}
+}
+
+/* Tablet Small */
+@media only screen and (min-width: 500px) {
+	.more-work-tile {
+		width: 30%;
+		max-width: 224px;
+	}
+	.more-work-tile:nth-child(even) {
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+
+}
+/* Tablet Medium */
+@media only screen and (min-width: 700px) {
+	/* Text Styles Desktop */
+
+	h1 {
+		font-size: 81px;
+	}
+
+	h2 {
+		font-size: 54px;
+	}
+
+	h3 {
+		font-size: 36px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	p {
+	font-size: 16px;
+	line-height: 1.5;
+	}
+
+	.project section.project-intro {
+		height: auto;
+		margin-bottom: 0px;
+	}
+
+	.project-intro .intro-img {
+		height: 60vh;
+	}
+
+	.project-intro h3 {
+		margin-top: 2%;
+	}
+
+	.ext-link-icon {
+		margin-top: 1%;
+	}
+
+	.project img.desktop-img.mobile-hidden {
+		-webkit-animation-iteration-count: 1;
+	    animation-iteration-count: 1;
+		visibility: hidden;
+	}
+
+	.project img.desktop-img.mobile-hidden.animated {
+		visibility: visible;
+		display: block;
+	}
+
+	.project img.desktop-img {
+		float: left;
+		width: 65%;
+		max-width: 650px;
+		margin-left: 5%;
+	}
+
+	.project .mobile-img {
+		float: left;
+		margin-top: 40px;
+		margin-bottom: -50px;
+		margin-left: 5%;
+	}
+
+	.project-mobile-pair p, .project-single-element p {
+		width: 60%;
+		max-width: 400px;
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 15%;
+	}
+
+	.project .single-element-text-container {
+		display: inline-block;
+		width: 20%;
+		margin-left: 5%;
+		margin-top: 40px;
+	}
+
+	.project-single-element p {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.project div.hr {
+		display: block;
+	}
+
+	.project .single-element-text-container div.hr {
+		margin-left: 0;
+		width: 50%;
+	}
+
+	.parallax_background {
+		margin-bottom: 40px;
+	}
+
+	.project section.more-work {
+		margin-top: 40px;
+	}
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+	.project .mobile-img {
+		margin-bottom: 0px;
+	}
+	.project-mobile-pair p {
+		width: 70%;
+	}
+}
+
 
 
 /* Animations */
