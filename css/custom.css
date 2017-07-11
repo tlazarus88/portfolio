@@ -179,8 +179,6 @@ body.project nav {
 	width: 37px;
 	height: 37px;
 	float: left;
-	margin-left: 15px;
-	margin-right: 10px;
 	margin: 11px 10px 11px 15px;
 }
 
@@ -191,6 +189,18 @@ nav p, .project nav p {
 	line-height: 1.25;
 	color: #000000;
 	margin: 18px 0;
+}
+
+#nav-options-container {
+	float: right;
+	display: none;
+	margin-right: 15px;
+	margin-top: 18px;
+}
+
+#nav-options-container li {
+	display: inline-block;
+	margin-left: 20px;
 }
 
 #hamburger {
@@ -729,6 +739,23 @@ footer h4, footer p.caption {
 	p {
 	font-size: 16px;
 	line-height: 1.5;
+	}
+
+	#nav-logo {
+		margin-left: 5%;
+	}
+
+	nav p {
+		font-size: 20px;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	#nav-options-container {
+		display: inline-block;
+		margin-right: 5%;
 	}
 
 	.project section.project-intro {
