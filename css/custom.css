@@ -203,6 +203,47 @@ nav p, .project nav p {
 	margin-left: 20px;
 }
 
+.dropbtn {
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--deep-green, #00701a);
+	opacity: .7; 
+}
+
+.dropdown-content a {
+	font-family: 'geomanistregular';
+    color: var(--white, #ffffff);
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.dropdown-content a:first-child {
+	padding-top: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    border-bottom: 2px solid #00701a;
+}
+
+.dropdown-content a:hover {
+	opacity: 1
+};
+
 #hamburger {
 	width: 36px;
 	position: fixed;
