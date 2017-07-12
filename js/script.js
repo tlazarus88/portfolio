@@ -126,15 +126,11 @@ $('#fullpage').fullpage({
 			$('nav').css('background', $("#about-me").attr("data-color"));
 			$('#down-label').text('Connect');
 			$('#down-directional').css('visibility', 'visible');
-
 		
 	};
 
 	// Anchor Link Manipulation
 	anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
-
-		
-
 	}
 	
 });

@@ -242,7 +242,7 @@ nav p, .project nav p {
 
 .dropdown-content a:hover {
 	opacity: 1
-};
+}
 
 #hamburger {
 	width: 36px;
@@ -471,25 +471,36 @@ nav p, .project nav p {
 	color: black;
 }
 
-.x-scroll-container {
-	overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 210px;
+
+#then .carousel-cell {
+	width: 40%;
+	margin-right: 10px;
 }
 
 .small-tile-container {
 	float: left;
 	display: inline-block;
-	margin-right: 10px;
-	width: 44%;
+	width: 100%;
 }
 
 .small-tile {
-	width: 100%%;
-	padding-top: 100%;
+	width: 100%;
 	margin-bottom: 10px;
-	background-color: var(--white, #f2f2f2);
+}
+
+.small-tile img {
+	width: 100%;
+}
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
 }
 
 /* Connect */
@@ -731,6 +742,10 @@ footer h4, footer p.caption {
 @media only screen and (min-width: 375px) {
 	.project-intro .intro-img {
 		height: 300px;
+	}
+
+	#then .carousel-cell {
+	width: 44%;
 	}
 }
 
