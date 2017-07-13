@@ -435,6 +435,24 @@ nav p, .project nav p {
 	height: 224px;
 }
 
+/* Now */
+
+.flickity-prev-next-button {
+	background: none;
+}
+
+.flickity-prev-next-button.previous {
+	left: -20%;
+}
+
+.flickity-prev-next-button.next {
+	right: -20%;
+}
+
+.flickity-prev-next-button:disabled {
+	opacity: 0;
+}
+
 /* Then */
 
 .then-buttons {
