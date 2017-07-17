@@ -242,8 +242,9 @@
 			<p>Photography was a major asset for this campaign, but not every subject had specific visuals for use. This slideshow was a mobile-friendly solution to provide context without diminishing user experience.</p>
 			<div class="hr"></div>
 		</section>
-		<div class="parallax_background" id="plx-bg-gold-rush">
-		</div>
+		<video class="bv-video"></video>
+		<!-- <div class="parallax_background" id="plx-bg-gold-rush">
+		</div> -->
 		<section class="project-single-element">
 			<img class="desktop-img" src="img/new_gold_rush/california_slider.jpg">
 			<div class="single-element-text-container">
@@ -369,6 +370,20 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
  	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+ 	<script src="js/backgroundVideo.js"></script>
+ 	<script>
+    const backgroundVideo = new BackgroundVideo('.bv-video', {
+      src: [
+        'videos/New_Gold_Rush_Bg_optimized-2.mp4',
+        'videos/New_Gold_Rush_Bg_optimized-2.webm'
+      ],
+      onReady: function () {
+        // Use onReady() to prevent flickers or force loading state
+        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+        vidParent.classList.add('bv-video-wrap--ready');
+      }
+    });
+  </script>
  	<script src="js/script.js"></script>
 
 
