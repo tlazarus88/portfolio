@@ -258,7 +258,7 @@ nav p, .project nav p {
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
-	z-index: 4;
+	z-index: 101;
 }
 
 #hamburger span {
@@ -317,7 +317,7 @@ nav p, .project nav p {
 	position:fixed;
 	width: 100%;
 	height: 100vh;
-	z-index: 3;
+	z-index: 100;
 	display: none;
 	top: 0;
 }
