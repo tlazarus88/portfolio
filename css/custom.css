@@ -555,7 +555,42 @@ nav p, .project nav p {
 
 #e-mail-expand-connect {
 	display: none;
+	float: left;
+	width: 50%;
+	margin-right: 8%;
 }
+
+#e-mail-expand-connect label {
+	position: absolute;
+	width: 18px;
+	padding-left: 8px;
+	padding-top: 6px;
+}
+
+#e-mail-expand-connect label#e-mail-label {
+	padding-top: 10px;
+}
+
+
+#e-mail-expand-connect input#name, #e-mail-expand-connect input#email {
+	text-indent: 32px;
+}
+
+#e-mail-expand-connect input, #e-mail-expand-connect textarea {
+	border: none;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	padding: 4px;
+	width: 100%;
+	margin-bottom: 17px;
+	padding-left: 8px;
+	font-family: 'geomanistregular';
+	font-size: 16px;
+	line-height: 1.5;
+	color: #cecece;
+}
+
+
 
 /* Project Page Styles */
 
@@ -800,6 +835,9 @@ footer h4, footer p.caption {
 	}
 	.connect-icon {
 		width: 72px;
+	}
+	#connect-options {
+		width: 100%;
 	}
 
 }
