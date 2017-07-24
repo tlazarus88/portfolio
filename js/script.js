@@ -24,6 +24,16 @@ $(document).ready(function(){
 
 });
 
+// Modal Animations
+$('.tile-zoom-btn').click(function(){
+	var modal = $(this).attr("data-id");
+	$('#'+modal).css('display', 'block');
+})
+$('.modal-close').click(function(){
+	$('.modal').css('display', 'none');
+})
+
+
 // On Viewport Function For Animations
 
 function onViewport(el, elClass, offset, callback) {
