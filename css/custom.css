@@ -623,6 +623,10 @@ nav p, .project nav p {
 	line-height: 1.5;
 }
 
+#e-mail-expand-connect textarea {
+	height: 200px;
+}
+
 #e-mail-expand-connect label#submit-label {
 	width: 30px;
 }
@@ -847,6 +851,27 @@ footer h4, footer p.caption {
 
 /* Responsive Design */
 
+/*Minimum Heights*/
+@media only screen and (max-height: 567px) {
+	#down-directional {
+		bottom: 2%;
+	}
+	.small-tile-container {
+		width: 200%;
+	}
+	.small-tile {
+		width: 45%;
+		margin-right: 10px;
+		display: inline-block;
+	}
+	.small-tile img {
+		width: 100%%;
+	}
+	#e-mail-expand-connect textarea {
+		height: 100px;
+	}
+}
+
 /* Mobile Medium */
 @media only screen and (min-width: 375px) {
 	.project-intro .intro-img {
@@ -902,41 +927,6 @@ footer h4, footer p.caption {
 
 }
 
-/* Then Slider for Minimum Width & Height*/
-@media only screen and (min-width: 700px) and (min-height: 700px) {
-
-	#then .content-container {
-		top: 45%;
-	}
-
-	#then .then-buttons li {
-		width: 30%;
-		max-width: 175px;
-	}
-
-	#then .then-buttons li:nth-of-type(2) {
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-
-	.then-buttons li p.caption {
-		font-size: 18px;
-	}
-
-	#then .carousel-cell {
-		width: 60%;
-	}
-
-	.small-tile img {
-		width: 50%;
-		max-width: 200px;
-	}
-
-	.small-tile .small-tile-text {
-		display: inline-block;
-	}
-}
-
 /* Tablet Medium */
 @media only screen and (min-width: 700px) {
 	/* Text Styles Desktop */
@@ -983,6 +973,15 @@ footer h4, footer p.caption {
 		margin-right: 5%;
 	}
 
+	#then small-tile-container {
+		width: 200%;
+	}
+
+	#then small-tile {
+		width: 50%;
+		margin-left: 10px;
+	}
+
 	.flickity-page-dots {
 		bottom: -10px;
 	}
@@ -990,8 +989,6 @@ footer h4, footer p.caption {
 	.flickity-page-dots .dot {
 		height: 8px;
 	 	width: 80px;
-		margin: 0;
-		border-radius: 0;
 	}
 
 	.project section.project-intro {
@@ -1073,6 +1070,41 @@ footer h4, footer p.caption {
 
 	.project section.more-work {
 		margin-top: 40px;
+	}
+}
+
+/* Then Slider for Minimum Width & Height*/
+@media only screen and (min-width: 700px) and (min-height: 700px) {
+
+	#then .content-container {
+		top: 45%;
+	}
+
+	#then .then-buttons li {
+		width: 30%;
+		max-width: 175px;
+	}
+
+	#then .then-buttons li:nth-of-type(2) {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.then-buttons li p.caption {
+		font-size: 18px;
+	}
+
+	#then .carousel-cell {
+		width: 60%;
+	}
+
+	.small-tile img {
+		width: 50%;
+		max-width: 200px;
+	}
+
+	.small-tile .small-tile-text {
+		display: inline-block;
 	}
 }
 
