@@ -35,7 +35,7 @@
 		<ul id="nav-options-container">
 			<li>
 				<div class="dropdown">
-					<h5 class="dropbtn">Now</h5>
+					<h5 class="dropbtn"><a href="#section2">Now</a></h5>
 					<div class="dropdown-content">
 						<a href="new_gold_rush.html">New Gold Rush</a>
 						<a href="#">Illustration</a>
@@ -45,7 +45,7 @@
 			</li>
 			<li>
 				<div class="dropdown">
-					<h5 class="dropbtn">Then</h5>
+					<h5 class="dropbtn"><a href="#section3">Then</a></h5>
 					<div class="dropdown-content">
 						<a href="#">Editorial</a>
 						<a href="#">Illustration</a>
@@ -53,10 +53,14 @@
 					</div>
 				</div>
 			</li>
-			<li><h5>About Me</h5></li>
 			<li>
 				<div class="dropdown">
-					<h5 class="dropbtn">Connect</h5>
+					<h5 class="dropbtn"><a href="#section4">About Me</a></h5>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+					<h5 class="dropbtn"><a href="#section5">Connect</a></h5>
 					<div class="dropdown-content">
 						<a href="new_gold_rush.html">E-mail</a>
 						<a  href="https://www.linkedin.com/in/trevorlazarus/" target="_blank">LinkedIn</a>
@@ -116,7 +120,7 @@
 			<h4>Then</h4>
 		</a>
 		<ul class="then-buttons">
-			<li><p class="caption">Editorial</p></li>
+			<li><a href="#section3"><p class="caption">Editorial</a></p></li>
 			<li><p class="caption">Illustration</p></li>
 			<li><p class="caption">Promotion</p></li>
 		</ul>
@@ -236,15 +240,21 @@
 		
 		<div id="intro" data-color="#76d275" data-anchor="section1" class="section">
 			<div class="content-container">
-				<h1>Hi!</h1>
-				<h3>Welcome to my portfolio.  Please scroll down to see highlights of my work as a designer and developer.</h3>
+				<h1 id="intro-hi" class="animated fadeInUp">Hi!</h1>
+				<h3 id="intro-desc" class="animated fadeInUp">Welcome to my portfolio.  Please scroll down to see highlights of my work as a designer and developer.</h3>
 			</div>
 		</div>
 
 		<div id="now" data-color="#63bf66" data-anchor="section2" class="section">
 			<div class="content-container">
 				<h3 class="sec-hed">Now</h3>
-				<div class="project-tile now-tile full-tile">
+				<!-- <div class="project-tile now-tile full-tile">
+				</div> -->
+				<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "freeScroll": "true", "arrowShape": "M 10,50 L 60,100 L 60,90 L 20,50  L 60,10 L 60,0 Z" }'>
+					<div class="carousel-cell">
+						<div class="project-tile now-tile full-tile">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
