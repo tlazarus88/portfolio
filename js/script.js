@@ -7,6 +7,12 @@ $('#down-directional').click(function(){
 	$.fn.fullpage.moveSectionDown();
 });
 
+// Flickity Anchor Links
+$('.then-buttons').on( 'click', '.then-button', function() {
+  var selector = $(this).attr('data-selector');
+  $('.main-carousel').flickity( 'selectCell', selector );
+});
+
 // Hamburger Animation
 $(document).ready(function(){
 	

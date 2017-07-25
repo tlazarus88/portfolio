@@ -253,12 +253,12 @@
 			<div class="content-container">
 				<h3 class="sec-hed">Then</h3>
 				<ul class="then-buttons">
-					<li class="active"><p class="caption">Editorial</p></li>
-					<li><p class="caption">Illustration</p></li>
-					<li><p class="caption">Promotion</p></li>
+					<li class="active then-button" data-selector="#editorial-start"><p class="caption">Editorial</p></li>
+					<li class="then-button" data-selector="#illustration-start"><p class="caption">Illustration</p></li>
+					<li class="then-button" data-selector="#promotion-start"><p class="caption">Promotion</p></li>
 				</ul>
 				<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "freeScroll": "true", "arrowShape": "M 10,50 L 60,100 L 60,90 L 20,50  L 60,10 L 60,0 Z" }'>
-					<div class="carousel-cell">
+					<div class="carousel-cell" id="editorial-start">
 						<div class="small-tile-container">
 							<div class="small-tile">
 								<img src="img/small_tiles/chase_tl_sm" data-id="modaltest1" class="tile-zoom-btn"/>
@@ -283,7 +283,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="carousel-cell">
+					<div class="carousel-cell" id="illustration-start">
 						<div class="small-tile-container">
 							<div class="small-tile">
 								<img src="img/small_tiles/chase_tl_sm"/>
@@ -303,7 +303,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="carousel-cell">
+					<div class="carousel-cell" id="promotion-start">
 						<div class="small-tile-container">
 							<div class="small-tile">
 								<img src="img/small_tiles/chase_tl_sm"/>
