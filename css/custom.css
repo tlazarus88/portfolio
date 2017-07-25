@@ -145,6 +145,7 @@ body {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #intro,#now,#then,#about-me,#connect {
@@ -914,6 +915,9 @@ footer h4, footer p.caption {
 
 /* Tablet Small */
 @media only screen and (min-width: 500px) {
+	#down-directional {
+		bottom: 2%;
+	}
 	.more-work-tile {
 		width: 30%;
 		max-width: 224px;
