@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 });
 
-// Modal Animations
+// Modal Functionalities
 $('.tile-zoom-btn').click(function(){
 	var modal = $(this).attr("data-id");
 	$('#'+modal).css('display', 'block');
