@@ -476,14 +476,14 @@ nav p, .project nav p {
 }
 
 .flickity-page-dots {
-  bottom: -22px;
+	bottom: -22px;
 }
 
 .flickity-page-dots .dot {
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
+	height: 4px;
+	width: 40px;
+	margin: 0;
+	border-radius: 0;
 }
 
 .project-tile {
@@ -500,14 +500,24 @@ nav p, .project nav p {
 	width: 96%;
 	max-width: 450px;
 	max-height: 450px;
+	overflow: hidden;
 	position: relative;
+	vertical-align: middle;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
-
-#now .tile-img-container:hover {}
 
 #now .full-tile img{
 	width: 100%;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	-moz-transition: all 0.3s;
+ 	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#now .tile-img-container:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .hover-icon {
@@ -517,14 +527,16 @@ nav p, .project nav p {
 	width: 40px;
 	height: 40px;
 	z-index: 2;
-	visibility: hidden;
+	-webkit-transition: .1s ease-in-out;
+	-moz-transition: .1s ease-in-out;
+	-o-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+	opacity: 0;
 }
 
 .tile-img-container:hover .hover-icon {
-	visibility: visible;
+	opacity: 1;
 }
-
-
 
 #now .carousel-cell {
 	width: 100%;
@@ -600,10 +612,19 @@ nav p, .project nav p {
 	margin-bottom: 10px;
 }
 
-.small-tile img {
+#then .tile-img-container {
 	width: 100%;
 	max-width: 200px;
+	max-height: 450px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.small-tile img {
+	width: 100%;
+	vertical-align: middle;
 	cursor: pointer;
 }
 
@@ -611,8 +632,7 @@ nav p, .project nav p {
 	display: none;
 	width: 40%;
 	margin-left: 10px;
-	margin-top: 10%;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .small-tile .small-tile-text p {
@@ -1001,7 +1021,7 @@ footer h4, footer p.caption {
 		display: inline-block;
 	}
 	.small-tile img {
-		width: 100%%;
+		width: 100%;
 	}
 	#e-mail-expand-connect textarea {
 		height: 100px;
@@ -1132,9 +1152,8 @@ footer h4, footer p.caption {
 	#now .full-tile-text {
 		width: 30%;
 		display: inline-block;
-		vertical-align: bottom;
+		vertical-align: middle;
 		margin-left: 5%;
-		margin-bottom: 25%;
 	} 
 
 	#now .full-tile h4.tile-title, #now .full-tile h5.tile-client, #now .full-tile h5.tile-description {
@@ -1281,9 +1300,9 @@ footer h4, footer p.caption {
 		width: 60%;
 	}
 
-	.small-tile img {
+	#then .tile-img-container {
 		width: 50%;
-		max-width: 200px;
+		display: inline-block;
 	}
 
 	.small-tile .small-tile-text {
@@ -1293,10 +1312,6 @@ footer h4, footer p.caption {
 
 /* Desktop */
 @media only screen and (min-width: 800px) {
-	.small-tile .small-tile-text {
-		vertical-align: bottom;
-		margin-bottom: 10px;
-	}
 	.small-tile .small-tile-text p.tile-title {
 		font-size: 20px;
 	}
