@@ -248,12 +248,12 @@
 		<div id="now" data-color="#63bf66" data-anchor="section2" class="section">
 			<div class="content-container">
 				<h3 class="sec-hed">Now</h3>
-				<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "arrowShape": "M 10,50 L 60,100 L 60,90 L 20,50  L 60,10 L 60,0 Z" }'>
+				<div class="main-carousel" id="now-carousel" data-flickity='{ "cellAlign": "left", "contain": "true", "arrowShape": "M 10,50 L 60,100 L 60,90 L 20,50  L 60,10 L 60,0 Z" }'>
 					<div class="carousel-cell">
 						<div class="project-tile now-tile full-tile">
 							<div class="tile-img-container">
 								<a href="new_gold_rush.html">
-								<img src="img/big_tiles/gold_rush_bg"/>
+								<div class="tile-img-bg" id="gold_rush_img_bg"/></div>
 								<div class="hover-icon ext-link">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 									 viewBox="0 0 140.3 140.3" enable-background="new 0 0 140.3 140.3" xml:space="preserve">
@@ -313,8 +313,22 @@
 					<div class="carousel-cell" id="editorial-start">
 						<div class="small-tile-container">
 							<div class="small-tile">
-								<div class="tile-img-container">
-									<img src="img/small_tiles/chase_tl_sm" data-id="modaltest1"/>
+								<div class="tile-img-container tile-zoom-btn" data-id="modaltest1">
+									<img src="img/small_tiles/chase_tl_sm" />
+									<div class="hover-icon modal-link">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 									viewBox="0 0 140.3 140.3" enable-background="new 0 0 140.3 140.3" xml:space="preserve">
+											<circle id="XMLID_109_" fill="#43A047" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" cx="70.1" cy="70.1" r="66.6"/>
+											<circle id="XMLID_105_" fill="#00701A" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" cx="83.3" cy="57.9" r="27.9"/>
+											<g id="XMLID_106_">
+												
+													<line id="XMLID_108_" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="83.3" y1="44.6" x2="83.3" y2="70.6"/>
+												
+													<line id="XMLID_107_" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="96.8" y1="58.1" x2="69.8" y2="58.1"/>
+											</g>
+											<line id="XMLID_104_" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.1" y1="104.9" x2="62.4" y2="78.6"/>
+										</svg>
+									</div>
 								</div>
 								<div class="small-tile-text">
 									<p class="tile-title">Project Name</p>
@@ -425,23 +439,23 @@
 
 			<!-- Modal Boxes -->
 			<div id="modaltest1" class="modal">
-
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<p>Some text in the Modal1</p>
+				<div class="modal-close">
+					<span></span>
+					<span></span>
 				</div>
-
+				<div class="modal-content">
+					<p>Some text in the Modal2</p>
+				</div>
+				</div>
 			</div>
 			<div id="modaltest2" class="modal">
 				<div class="modal-close">
 					<span></span>
 					<span></span>
 				</div>
-
 				<div class="modal-content">
 					<p>Some text in the Modal2</p>
 				</div>
-
 			</div>
 		</div>
 

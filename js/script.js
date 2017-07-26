@@ -30,6 +30,14 @@ $(document).ready(function(){
 
 });
 
+// Now Tile Height Resizing
+$(document).ready(function() {
+    $(window).resize(function() {
+        var tileWidth = $('.tile-img-bg').width();
+        $('.tile-img-bg').css({'height':tileWidth+'px'});
+    }).resize();
+});
+
 // Modal Functionalities
 $('.tile-zoom-btn').click(function(){
 	var modal = $(this).attr("data-id");
