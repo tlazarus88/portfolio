@@ -42,10 +42,15 @@ $(document).ready(function() {
 $('.tile-zoom-btn').click(function(){
 	var modal = $(this).attr("data-id");
 	$('#'+modal).css('display', 'block');
+	$('.modal').on( 'shown.bs.modal', function( event ) {
+  		$('.then-gallery').flickity('resize');
+	});
 })
 $('.modal-close').click(function(){
 	$('.modal').css('display', 'none');
 })
+
+
 
 
 // On Viewport Function For Animations

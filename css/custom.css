@@ -222,10 +222,15 @@ nav p, .project nav p {
 }
 
 .dropdown-content {
-	display: none;
 	position: absolute;
 	background-color: var(--deep-green, #00701a);
-	opacity: .7; 
+	opacity: .7;
+	max-height:0;
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    overflow: hidden;
 }
 
 .dropdown-content a {
@@ -234,7 +239,12 @@ nav p, .project nav p {
     padding: 8px 10px;
     text-decoration: none;
     font-size: 18px;
-    display: block;
+     -webkit-transition: 1000ms ease;
+    -moz-transition: 1000ms ease;
+    -o-transition: 1000ms ease;
+    transition: 1000ms ease;
+    max-height: 0px;    
+    display: none;
 }
 
 .dropdown-content a:first-child {
@@ -242,7 +252,12 @@ nav p, .project nav p {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    max-height: 150px;
+}
+
+.dropdown:hover .dropdown-content a {
+	max-height: 150px;
+	display: block;
 }
 
 .dropdown:hover .dropbtn {
@@ -250,7 +265,7 @@ nav p, .project nav p {
 }
 
 .dropdown-content a:hover {
-	opacity: 1
+	opacity: 1;
 }
 
 #hamburger {
@@ -725,9 +740,14 @@ nav p, .project nav p {
 
 	.modal-content {
 	    position: absolute;
-	    top: 50%;
+	    /*top: 50%;
 	    left: 50%;
-	    transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);*/
+	}
+
+	.modal-content img {
+		width: 100%;
+		max-width: 700px;
 	}
 
 /* Connect */
