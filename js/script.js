@@ -30,21 +30,45 @@ $(document).ready(function(){
 
 });
 
-// Now Tile Height Resizing
+// Javascript Resizing
 $(document).ready(function() {
     $(window).resize(function() {
+
+    	// Now Tile Height Resizing
         var tileWidth = $('.tile-img-bg').width();
         $('.tile-img-bg').css({'height':tileWidth+'px'});
+
+        // Modal Carousel-Width Resizing
+        var modalWidth = $('.modal-content').width();
+        var modalHeight = .66*modalWidth;
+
+        $('.then-gallery').css({'width':modalWidth+'px'});
+        $('.then-gallery').css({'height':modalHeight+'px'})
+        var help = $('.flickity-viewport.is-pointer-down').css({'height':modalHeight+'px'});
+        console.log(help);
+
     }).resize();
 });
 
 // Modal Functionalities
 $('.tile-zoom-btn').click(function(){
 	var modal = $(this).attr("data-id");
-	$('#'+modal).css('display', 'block');
-	$('.modal').on( 'shown.bs.modal', function( event ) {
-  		$('.then-gallery').flickity('resize');
-	});
+	$('#'+modal).css('display', 'block').promise().done(function(){
+		window.dispatchEvent(new Event('resize'));
+    	
+    	var modalWidth = $('.modal-content').width();
+    	var modalHeight = .66*modalWidth;
+
+        $('.then-gallery').css({'width':modalWidth+'px'}).promise().done(function(){
+        	// $('.gallery-image').css({'height':modalHeight+'px'});
+        });
+        $('.then-gallery').css({'height':modalHeight+'px'});
+        
+        $('.flickity-slider').css({'height':modalHeight+'px'});
+        $('.flickity-viewport').css({'height':modalHeight+'px'});
+        $('.modal-content').css({'height':modalHeight+'px'})
+    });
+  	
 })
 $('.modal-close').click(function(){
 	$('.modal').css('display', 'none');
