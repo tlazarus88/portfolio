@@ -74,7 +74,11 @@ $('.modal-close').click(function(){
 	$('.modal').css('display', 'none');
 })
 
-
+// Then Button Toggle Styles
+$('.then-button').click(function(){
+	$('.then-button').removeClass('active');
+	$(this).addClass('active');
+})
 
 
 // On Viewport Function For Animations
