@@ -479,9 +479,9 @@
 				<h3 class="sec-hed">Connect</h3>
 				<h4>Just do it!</h4>
 				<div id="e-mail-expand-connect">
-					<form action="mailto:trevor.das.lazarus@gmail.com" method="post" enctype="text/plain">
+					<form name="contactform" method="post" action="php/send_form_email.php">
 
-						<label for="name">
+						<!-- <label for="name">
 							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 20.7 21.9" enable-background="new 0 0 20.7 21.9" xml:space="preserve">
 							<g>
@@ -523,10 +523,10 @@
 								</g>
 							</g>
 							</svg>
-						</label>
-						<input type="text" id="name" name="Name" placeholder="Your Name">
+						</label> -->
+						<input type="text" id="name" name="name" maxlength="20" placeholder="Your Name">
 
-						<label id="e-mail-label" for="email">
+						<!-- <label id="e-mail-label" for="email">
 							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 						viewBox="0 0 120 78.8" enable-background="new 0 0 120 78.8" xml:space="preserve">
 							<g id="XMLID_66_">
@@ -540,14 +540,14 @@
 									c2.8,0,5.3-1.3,7.1-3.3L82.8,40.8L67.6,56z"/>
 							</g>
 							</svg>
-						</label>
-						<input type="text" id="email" name="email" placeholder="E-mail">
+						</label> -->
+						<input type="text" id="email" name="email" maxlength="50" placeholder="E-mail">
 						
 						<input type="text" id="subject" name="subject" placeholder="Subject">
 
-						<textarea id="message" name="message" placeholder="Your message..."></textarea>
+						<textarea type="text" id="message" name="message" placeholder="Your message..."></textarea>
 
-						<label id="submit-label" for="submit">
+						<!-- <label id="submit-label" for="submit">
 							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 134 82.7" enable-background="new 0 0 134 82.7" xml:space="preserve">
 							<g id="XMLID_67_">
@@ -562,8 +562,8 @@
 									M35.3,75.7"/>
 							</g>
 							</svg>
-						</label>
-						<input id="submit" type="submit" value="Submit">
+						</label> -->
+						<input id="submit" type="submit" value="Submit"><input type="submit" value="Submit">
 
 					</form>
 				</div>
