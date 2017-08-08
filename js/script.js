@@ -189,6 +189,43 @@ $('#fullpage').fullpage({
 	// Anchor Link Manipulation
 	anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
 	}
+
+	// afterLoad: function(anchorLink, index){
+// 	// 	var loadedSection = $(this);
+
+// 	// 	if(index == 1){
+// 	// 		$('body').css('background', $("#intro").attr("data-color"));
+// 	// 		$('nav').css('background', $("#intro").attr("data-color"));
+// 	// 		$('#down-label').text('');
+// 	// 	};
+
+// 	// 	if(index == 2){
+// 	// 		$('body').css('background', $("#now").attr("data-color"))
+// 	// 		$('nav').css('background', $("#now").attr("data-color"));
+// 	// 		$('#down-label').text('Then');
+// 	// 	};
+
+// 	// 	if(index == 3){
+// 	// 		$('body').css('background', $("#then").attr("data-color"))
+// 	// 		$('nav').css('background', $("#then").attr("data-color"));
+// 	// 		$('#down-label').text('About Me')
+// 	// 	};
+
+// 	// 	if(index == 4){
+// 	// 		$('body').css('background', $("#about-me").attr("data-color"))
+// 	// 		$('nav').css('background', $("#about-me").attr("data-color"));
+// 	// 		$('#down-label').text('Connect');
+// 	// 	};
+
+// 	// 	if(index == 5){
+// 	// 		$('body').css('background', $("#connect").attr("data-color"))
+// 	// 		$('nav').css('background', $("#connect").attr("data-color"));
+// 	// 		$('#down-directional').css('visibility', 'hidden');
+// 	// 	};
+
+// 	// },
+
+	
 	
 });
 
