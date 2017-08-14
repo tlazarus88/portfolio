@@ -1329,18 +1329,19 @@ footer h4, footer p.caption {
 
 	.project img.desktop-img.mobile-hidden.animated {
 		visibility: visible;
-		display: block;
+		display: inline-block;
 	}
 
 	.project img.desktop-img {
-		float: left;
+		display: inline-block;
 		width: 65%;
 		max-width: 650px;
 		margin-left: 5%;
+		vertical-align: top;
 	}
 
 	.project .mobile-img {
-		float: left;
+		display: inline-block;
 		margin-top: 40px;
 		margin-bottom: -50px;
 		margin-left: 5%;
@@ -1474,6 +1475,33 @@ footer h4, footer p.caption {
 	}
 	.project-mobile-pair p {
 		width: 70%;
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1500px) {
+	.project section {
+		max-width: 1250px;
+	}
+	.project p {
+		font-size: 20px;
+	}
+	.project img.desktop-img {
+		max-width: 1000px;
+	}
+	.project img.mobile-img {
+		width: 300px;
+	}
+	.project-mobile-pair p {
+		transform: translateY(-110%);
+		margin-bottom: 0px;
+	}
+	.project-mobile-pair div.hr {
+		transform: translateY(-2300%);
+		margin-bottom: 0px;
+	}
+	.project-single-element {
+		padding-top: 80px;
 	}
 }
 
