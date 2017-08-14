@@ -961,7 +961,7 @@ nav p, .project nav p {
 	max-width: 70%;
 }
 
-.project .mobile-img {
+.project .mobile-video, .project .mobile-img {
 	display: block;
 	width: 150px;
 	margin: 0 auto;
@@ -972,7 +972,7 @@ nav p, .project nav p {
     visibility: hidden;
 }
 
-.project .mobile-img.animated {
+.project .mobile-video, .project .mobile-img.animated {
     visibility: visible;
 }
 
@@ -981,7 +981,7 @@ nav p, .project nav p {
 	margin-bottom: 15px;
 }
 
-.project img.desktop-img {
+.project video.desktop-video, .project img.desktop-img {
 	width: 90%;
 	height: auto;
 	display: block;
@@ -992,11 +992,11 @@ nav p, .project nav p {
 	visibility: hidden;
 }
 
-.project img.desktop-img.animated {
+.project video.desktop-video, .project img.desktop-img.animated {
 	visibility: visible;
 }
 
-.project img.desktop-img.mobile-hidden {
+.project video.desktop-video, .project img.desktop-img.mobile-hidden {
 	display: none;
 	visibility: hidden;
 }
@@ -1321,18 +1321,18 @@ footer h4, footer p.caption {
 		margin-top: 1%;
 	}
 
-	.project img.desktop-img.mobile-hidden {
+	.project video.desktop-video, .project img.desktop-img.mobile-hidden {
 		-webkit-animation-iteration-count: 1;
 	    animation-iteration-count: 1;
 		visibility: hidden;
 	}
 
-	.project img.desktop-img.mobile-hidden.animated {
+	.project video.desktop-video, .project img.desktop-img.mobile-hidden.animated {
 		visibility: visible;
 		display: inline-block;
 	}
 
-	.project img.desktop-img {
+	.project video.desktop-video, .project img.desktop-img {
 		display: inline-block;
 		width: 65%;
 		max-width: 650px;
@@ -1340,7 +1340,7 @@ footer h4, footer p.caption {
 		vertical-align: top;
 	}
 
-	.project .mobile-img {
+	.project .mobile-video, .project .mobile-img {
 		display: inline-block;
 		margin-top: 40px;
 		margin-bottom: -50px;
@@ -1470,7 +1470,7 @@ footer h4, footer p.caption {
 	.small-tile .small-tile-text p.tile-description {
 		font-size: 16px;
 	}
-	.project .mobile-img {
+	.project .mobile-video, .project .mobile-img {
 		margin-bottom: 0px;
 	}
 	.project-mobile-pair p {
@@ -1486,10 +1486,10 @@ footer h4, footer p.caption {
 	.project p {
 		font-size: 20px;
 	}
-	.project img.desktop-img {
+	.project video.desktop-video, .project img.desktop-img {
 		max-width: 1000px;
 	}
-	.project img.mobile-img {
+	.project .mobile-video, .project img.mobile-img {
 		width: 300px;
 	}
 	.project-mobile-pair p {
