@@ -186,7 +186,7 @@ body.project nav {
 	margin: 11px 10px 11px 15px;
 }
 
-nav p, .project nav p {
+nav p, body.project nav p {
 	float: left;
 	font-family: 'geomanistregular';
 	font-size: 16px;
@@ -209,12 +209,12 @@ nav p, .project nav p {
 
 .dropbtn a {
 	cursor: pointer;
-	color: color: #000000;
+	color: #000000;
 }
 
 .dropbtn a:visited {
-	color: color: var(--white, #ffffff);
-}
+	color: #000000; 
+} 
 
 .dropdown {
 	position: relative;
@@ -223,7 +223,7 @@ nav p, .project nav p {
 
 .dropdown-content {
 	position: absolute;
-	background-color: var(--deep-green, #00701a);
+	background-color: var(--dark-green, #00701a);
 	opacity: .7;
 	max-height:0;
     -webkit-transition: 300ms ease;
@@ -231,6 +231,11 @@ nav p, .project nav p {
     -o-transition: 300ms ease;
     transition: 300ms ease;
     overflow: hidden;
+}
+
+body.project .dropdown-content {
+	opacity: 1;
+	background-color: var(--mid-green, #00701a);
 }
 
 .dropdown-content a {
@@ -936,9 +941,13 @@ nav p, .project nav p {
 
 /* Project Intro Images */
 
-#new_gold_rush_project div.intro-img {
-	background-image: url("../img/new_gold_rush/gold_rush_header.jpg");
-}
+	#new_gold_rush_project div.intro-img {
+		background-image: url("../img/new_gold_rush/gold_rush_header.jpg");
+	}
+
+	#state_of_play_project div.intro-img {
+		background-image: url("../img/state_of_play/state_play_header.jpg");
+	}
 
 .project h3 {
 	margin-top: 5%;
@@ -979,6 +988,10 @@ nav p, .project nav p {
 .project-mobile-pair p, .project-single-element p {
 	margin-top: 20px;
 	margin-bottom: 15px;
+}
+
+.project-single-element-top {
+	padding-bottom: 10%;
 }
 
 .project video.desktop-video, .project img.desktop-img {
