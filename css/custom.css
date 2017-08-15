@@ -996,7 +996,7 @@ nav p, .project nav p {
 	visibility: visible;
 }
 
-.project video.desktop-video, .project img.desktop-img.mobile-hidden {
+.project video.desktop-video.mobile-hidden, .project img.desktop-img.mobile-hidden {
 	display: none;
 	visibility: hidden;
 }
@@ -1321,13 +1321,13 @@ footer h4, footer p.caption {
 		margin-top: 1%;
 	}
 
-	.project video.desktop-video, .project img.desktop-img.mobile-hidden {
+	.project video.desktop-video.mobile-hidden, .project img.desktop-img.mobile-hidden {
 		-webkit-animation-iteration-count: 1;
 	    animation-iteration-count: 1;
 		visibility: hidden;
 	}
 
-	.project video.desktop-video, .project img.desktop-img.mobile-hidden.animated {
+	.project video.desktop-video.mobile-hidden, .project img.desktop-img.mobile-hidden.animated {
 		visibility: visible;
 		display: inline-block;
 	}
