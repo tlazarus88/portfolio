@@ -547,6 +547,9 @@ body.project .dropdown-content {
 	#gold_rush_img_bg {
 		background-image: url("../img/big_tiles/gold_rush_bg");
 	}
+	#state_play_img_bg {
+		background-image: url("../img/big_tiles/state_play_bg.jpg");
+	}
 
 
 .hover-icon {
@@ -1301,6 +1304,8 @@ footer h4, footer p.caption {
 
 	#now .full-tile h5.tile-description {
 		display: block;
+		font-size: 16px;
+		line-height: 22px;
 	}
 
 	#then small-tile-container {
