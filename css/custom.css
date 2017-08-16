@@ -991,7 +991,11 @@ body.project .dropdown-content {
 }
 
 .project-single-element-top {
-	padding-bottom: 10%;
+	padding-bottom: 5%;
+}
+
+.project .project-single-element video.desktop-video, .project .project-single-element img.desktop-img {
+	vertical-align: middle;
 }
 
 .project video.desktop-video, .project img.desktop-img {
@@ -1121,6 +1125,10 @@ footer h4, footer p.caption {
 
 #plx-bg-gold-rush {
 	background-image: url("../img/new_gold_rush/california_story.jpg")
+}
+
+#plx-bg-gold-rush {
+	background-image: url("../img/state_of_play/state_play_bg.jpg")
 }
 
 /* Responsive Design */
@@ -1374,6 +1382,7 @@ footer h4, footer p.caption {
 		width: 20%;
 		margin-left: 5%;
 		margin-top: 40px;
+		vertical-align: middle;
 	}
 
 	.project-single-element p {
