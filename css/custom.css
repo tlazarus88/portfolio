@@ -952,6 +952,10 @@ body.project .dropdown-content {
 		background-image: url("../img/state_of_play/state_play_header.jpg");
 	}
 
+	#myford_fusion_project div.intro-img {
+		background-image: url("../img/myford_fusion/myford_fusion_header.jpg");
+	}
+
 .project h3 {
 	margin-top: 5%;
 	margin-bottom: 1%;
@@ -1130,8 +1134,12 @@ footer h4, footer p.caption {
 	background-image: url("../img/new_gold_rush/california_story.jpg")
 }
 
-#plx-bg-gold-rush {
+#plx-bg-state-play {
 	background-image: url("../img/state_of_play/state_play_bg.jpg")
+}
+
+#plx-bg-myford-fusion {
+	background-image: url("../img/myford_fusion/myford_fusion_bg.jpg")
 }
 
 /* Responsive Design */
