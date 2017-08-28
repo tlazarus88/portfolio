@@ -44,8 +44,8 @@ $(document).ready(function() {
 
         $('.then-gallery').css({'width':modalWidth+'px'});
         $('.then-gallery').css({'height':modalHeight+'px'})
-        var help = $('.flickity-viewport.is-pointer-down').css({'height':modalHeight+'px'});
-        console.log(help);
+        // var help = $('.flickity-viewport.is-pointer-down').css({'height':modalHeight+'px'});
+        // console.log(help);
 
     }).resize();
 });
@@ -61,12 +61,18 @@ $('.tile-zoom-btn').click(function(){
 
         $('.then-gallery').css({'width':modalWidth+'px'}).promise().done(function(){
         	// $('.gallery-image').css({'height':modalHeight+'px'});
+        	$('.gallery-image').css({'width':modalWidth+'px'}).promise().done(function(){
+        		window.dispatchEvent(new Event('resize'));
+        		$('.carousel-cell').css({'left': modalWidth+'px'});
+        	});
+
         });
-        $('.then-gallery').css({'height':modalHeight+'px'});
+        // $('.then-gallery').css({'height':modalHeight+'px'});
         
-        $('.flickity-slider').css({'height':modalHeight+'px'});
-        $('.flickity-viewport').css({'height':modalHeight+'px'});
-        $('.modal-content').css({'height':modalHeight+'px'})
+        // $('.flickity-slider').css({'height':modalHeight+'px'});
+        // $('.flickity-viewport').css({'height':modalHeight+'px'});
+        // $('.modal-content').css({'height':modalHeight+'px'})
+        // console.log($('.flickity-viewport').height());
     });
   	
 })
