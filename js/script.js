@@ -59,14 +59,14 @@ $('.tile-zoom-btn').click(function(){
     	var modalWidth = $('.modal-content').width();
     	var modalHeight = .66*modalWidth;
 
-        $('.then-gallery').css({'width':modalWidth+'px'}).promise().done(function(){
-        	// $('.gallery-image').css({'height':modalHeight+'px'});
-        	$('.gallery-image').css({'width':modalWidth+'px'}).promise().done(function(){
-        		window.dispatchEvent(new Event('resize'));
-        		$('.carousel-cell').css({'left': modalWidth+'px'});
-        	});
+        // $('.then-gallery').css({'width':modalWidth+'px'}).promise().done(function(){
+        // 	// $('.gallery-image').css({'height':modalHeight+'px'});
+        // 	$('.gallery-image').css({'width':modalWidth+'px'}).promise().done(function(){
+        // 		window.dispatchEvent(new Event('resize'));
+        // 		$('.carousel-cell').css({'left': modalWidth+'px'});
+        // 	});
 
-        });
+        // });
         // $('.then-gallery').css({'height':modalHeight+'px'});
         
         // $('.flickity-slider').css({'height':modalHeight+'px'});
