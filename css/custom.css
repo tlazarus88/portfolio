@@ -804,6 +804,11 @@ body.project .dropdown-content {
 		margin: 0 auto;
 	}
 
+	.modal-content .gallery-image.single-image {
+		max-height: 466.5px;
+		width: auto;
+	}
+
 	.modal .flickity-prev-next-button {
   		display: none;
 	}
