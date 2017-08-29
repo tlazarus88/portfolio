@@ -40,12 +40,10 @@ $(document).ready(function() {
 
         // Modal Carousel-Width Resizing
         var modalWidth = $('.modal-content').width();
-        var modalHeight = .66*modalWidth;
+        // var modalHeight = .66*modalWidth;
 
         $('.then-gallery').css({'width':modalWidth+'px'});
-        $('.then-gallery').css({'height':modalHeight+'px'})
-        // var help = $('.flickity-viewport.is-pointer-down').css({'height':modalHeight+'px'});
-        // console.log(help);
+        // $('.then-gallery').css({'height':modalHeight+'px'})
 
     }).resize();
 });
@@ -55,29 +53,13 @@ $('.tile-zoom-btn').click(function(){
 	var modal = $(this).attr("data-id");
 	$('#'+modal).css('display', 'block').promise().done(function(){
 		window.dispatchEvent(new Event('resize'));
-    	
-    	var modalWidth = $('.modal-content').width();
-    	var modalHeight = .66*modalWidth;
-
-        // $('.then-gallery').css({'width':modalWidth+'px'}).promise().done(function(){
-        // 	// $('.gallery-image').css({'height':modalHeight+'px'});
-        // 	$('.gallery-image').css({'width':modalWidth+'px'}).promise().done(function(){
-        // 		window.dispatchEvent(new Event('resize'));
-        // 		$('.carousel-cell').css({'left': modalWidth+'px'});
-        // 	});
-
-        // });
-        // $('.then-gallery').css({'height':modalHeight+'px'});
-        
-        // $('.flickity-slider').css({'height':modalHeight+'px'});
-        // $('.flickity-viewport').css({'height':modalHeight+'px'});
-        // $('.modal-content').css({'height':modalHeight+'px'})
-        // console.log($('.flickity-viewport').height());
     });
+    $('#down-directional').css('visibility', 'hidden');
   	
 })
 $('.modal-close').click(function(){
 	$('.modal').css('display', 'none');
+	$('#down-directional').css('visibility', 'visible');
 })
 
 // Then Button Toggle Styles
