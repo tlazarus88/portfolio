@@ -248,11 +248,12 @@ body.project .dropdown-content {
     padding: 8px 10px;
     text-decoration: none;
     font-size: 18px;
-     -webkit-transition: 1000ms ease;
-    -moz-transition: 1000ms ease;
-    -o-transition: 1000ms ease;
-    transition: 1000ms ease;
-    max-height: 0px;    
+     -webkit-transition: max-height 1000ms ease, color 200ms ease-in-out;
+    -moz-transition: max-height 1000ms ease, color 200ms ease-in-out;
+    -o-transition: max-height 1000ms ease, color 200ms ease-in-out;
+    transition: max-height 1000ms ease, color 200ms ease-in-out;
+    max-height: 0px;
+    width: 100%;   
     display: none;
 }
 
@@ -267,6 +268,10 @@ body.project .dropdown-content {
 .dropdown:hover .dropdown-content a {
 	max-height: 150px;
 	display: block;
+}
+
+.dropdown:hover .dropdown-content a:hover {
+	color: var(--deep-green, #00701a);
 }
 
 .dropdown:hover .dropbtn {
@@ -478,6 +483,10 @@ body.project .dropdown-content {
 #down-arrow {
 	width: 50px;
 	margin: 0 auto;
+}
+
+#chase_masters_project .project-page .project-intro #down-arrow {
+	margin-top:30px;
 }
 
 /* Now */
@@ -984,6 +993,10 @@ body.project .dropdown-content {
 
 /* Project Intro Images */
 
+	#chase_masters_project div.intro-img {
+		background-image: url("../img/chase_masters/chase_masters_header.jpg");
+	}
+
 	#new_gold_rush_project div.intro-img {
 		background-image: url("../img/new_gold_rush/gold_rush_header.jpg");
 	}
@@ -1014,7 +1027,7 @@ body.project .dropdown-content {
 .project p {
 	margin: 0 auto;
 	margin-top: 2%;
-	max-width: 70%;
+	max-width: 80%;
 }
 
 .project .mobile-video, .project .mobile-img {
@@ -1032,7 +1045,7 @@ body.project .dropdown-content {
     visibility: visible;
 }
 
-.project-mobile-pair p, .project-single-element p {
+.project-mobile-pair p, .project-single-element p, .project-quad-h p {
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
@@ -1073,6 +1086,42 @@ body.project .dropdown-content {
 	border-radius: 26px;
 	background-color: var(--deep-green, #00701a);
 	display: none;
+}
+
+.project-quad-h {
+	transform: translateY(-59px);
+}
+
+.project-quad-h ul {
+	text-align: center;
+}
+
+.project-quad-h li {
+	width: 100%;
+	max-width: 220px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.project-quad-h li img {
+	width: 100%;
+}
+
+.project-quad-h .chapter-container {
+	width: 100%;
+}
+
+.project-quad-h h5 {
+	margin: 10px auto;
+}
+
+.project-quad-h .chapter {
+	width: 49%;
+	display: inline-block;
+}
+
+.project-quad-h .chapter:hover {
+	cursor: pointer;
 }
 
 .more-work {
@@ -1379,12 +1428,12 @@ footer h4, footer p.caption {
 	}
 
 	.project section.project-intro {
-		height: auto;
 		margin-bottom: 0px;
 	}
 
 	.project-intro .intro-img {
-		height: 60vh;
+		height: 50vh;
+		margin: 0 auto;
 	}
 
 	.project-intro h3 {
@@ -1421,13 +1470,18 @@ footer h4, footer p.caption {
 		margin-left: 5%;
 	}
 
-	.project-mobile-pair p, .project-single-element p {
+	.project-mobile-pair p, .project-single-element p, .project-quad-h p {
 		width: 60%;
 		max-width: 400px;
 		text-align: left;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		margin-left: 15%;
+	}
+
+	.project-quad-h p {
+		max-width: 100%;
+		text-align: center;
 	}
 
 	.project .single-element-text-container {
@@ -1459,6 +1513,17 @@ footer h4, footer p.caption {
 
 	.project section.more-work {
 		margin-top: 40px;
+	}
+
+	.project-quad-h li {
+		width: 20%;
+		display: inline-block;
+	}
+	.project-quad-h .chapter {
+		width: 48%;
+	}
+	.project-quad-h h5 {
+		font-size: .8em;
 	}
 }
 
@@ -1554,7 +1619,7 @@ footer h4, footer p.caption {
 		margin-bottom: 0px;
 	}
 
-	.project-mobile-pair p {
+	.project-mobile-pair p, .project-quad-h p {
 		width: 70%;
 	}
 }
