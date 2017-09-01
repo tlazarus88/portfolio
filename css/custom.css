@@ -1231,6 +1231,20 @@ footer h4, footer p.caption {
 	background-image: url("../img/myford_fusion/myford_fusion_bg.jpg")
 }
 
+#plx-bg-chase-masters-1 {
+	background-image: url("../img/chase_masters/chase_tl_options_bg.jpg")
+}
+
+#plx-bg-chase-masters-2 {
+	background-image: url("../img/chase_masters/chase_m_infog_bg.jpg")
+}
+
+#plx-bg-chase-masters-3 {
+	background-image: url("../img/chase_masters/chase_rs_accordion_bg.jpg")
+}
+
+
+
 /* Responsive Design */
 
 /*Minimum Heights*/
@@ -1278,6 +1292,10 @@ footer h4, footer p.caption {
 	.project-intro .intro-img {
 		height: 325px;
 	}
+	.project-quad-h li {
+		display: inline-block;
+	}
+
 }
 
 /* Tablet Small */
@@ -1517,7 +1535,6 @@ footer h4, footer p.caption {
 
 	.project-quad-h li {
 		width: 20%;
-		display: inline-block;
 	}
 	.project-quad-h .chapter {
 		width: 48%;
@@ -1651,6 +1668,17 @@ footer h4, footer p.caption {
 	}
 }
 
+@media only screen and (min-height: 900px) {
+	.project-intro .intro-img {
+		height: 60vh;
+	}
+}
+
+@media only screen and (min-height: 1300px) {
+	.project-intro .intro-img {
+		height: 70vh;
+	}
+}
 
 
 /* Animations */

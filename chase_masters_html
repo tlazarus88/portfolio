@@ -489,9 +489,10 @@
 				</li>
 			<p>Chase Private Client had strict guidelines for how their branding should be applied to all of the digital experiences. Our challenge was to unify their identity with those of the four Time Inc. brands and maintain cohesion across the campaign. We accomplished this by keeping UI elements standard across all websites, but included distinct accent color, primary typefact, and decorative pattern to align to the audience’s perception of the partner brand.</p>
 		</section>
-		<video class="bv-video"></video>
-		<!-- <div class="parallax_background" id="plx-bg-gold-rush">
-		</div> -->
+		
+		<div class="parallax_background" id="plx-bg-chase-masters-1">
+		</div>
+
 		<section class="project-single-element">
 			<video autoplay="autoplay" loop class="desktop-video">
 				<source src="videos/Chase_Masters_Quiz_MC.mp4" type="video/mp4">
@@ -504,9 +505,8 @@
 			</div>
 		</section>
 
-		<video class="bv-video"></video>
-		<!-- <div class="parallax_background" id="plx-bg-gold-rush">
-		</div> -->
+		<div class="parallax_background" id="plx-bg-chase-masters-2">
+		</div>
 
 		<section class="project-mobile-pair">
 			<video autoplay="autoplay" loop class="desktop-video mobile-hidden">
@@ -515,12 +515,23 @@
 			</video>
 			<!-- <img class="desktop-img mobile-hidden" src="img/chase_masters/chase_quiz_binary.jpg"> -->
 			<video autoplay="autoplay" loop class="mobile-video">
-				<source src="videos/New_Gold_Rush_Mobile_Slides.mp4" type="video/mp4">
-				<source src="videos/New_Gold_Rush_Mobile_Slides.webm" type="video/webm">
+				<source src="videos/Chase_Masters_Quiz_Binary_Mobile.mp4" type="video/mp4">
+				<source src="videos/Chase_Masters_Quiz_Binary_Mobile.webm" type="video/webm">
 			</video>
 			<!-- <img class="mobile-img" src="img/chase_masters/chase_quiz_binary.jpg"> -->
 			<p>While some quizzes had multiple options, others only had binary responses. To ensure users could see the correct response regardless of their solution, we provided subtle animations upon any user input.</p>
 			<div class="hr"></div>
+		</section>
+
+		<div class="parallax_background" id="plx-bg-chase-masters-3">
+		</div>
+
+		<section class="project-single-element">
+			<img class="desktop-img" src="img/chase_masters/chase_masters_lightbox.jpg">
+			<div class="single-element-text-container">
+				<p>To maximize distribution of the content, special advertising units that would popup on users browsers while visiting aligned brands were designed to also contain similar functionality and duplicate content.</p>
+				<div class="hr"></div>
+			</div>
 		</section>
 
 		<section class="more-work">
