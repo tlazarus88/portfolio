@@ -924,9 +924,9 @@ body.project .dropdown-content {
 }
 
 
-#e-mail-expand-connect input#name, #e-mail-expand-connect input#email {
+/*#e-mail-expand-connect input#name, #e-mail-expand-connect input#email {
 	text-indent: 32px;
-}
+}*/
 
 #e-mail-expand-connect input, #e-mail-expand-connect textarea {
 	border: none;
@@ -951,10 +951,9 @@ body.project .dropdown-content {
 
 #e-mail-expand-connect input#submit {
 	text-align: left;
-	text-indent: 40px;
 	text-transform: uppercase;
 	width: auto;
-	padding-right: 15px;
+	padding-right: 9px;
 	color: var(--white, #ffffff);
 	background-color: var(--deep-green, #00701a);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
@@ -1558,9 +1557,9 @@ footer h4, footer p.caption {
 	#now .tile-img-container {
 		width: 45%;
 	}
-	#now .full-tile h5.tile-description {
+	/*#now .full-tile h5.tile-description {
 		display: none;
-	}
+	}*/
 }
 
 /* Then Slider for Minimum Width & Height*/
