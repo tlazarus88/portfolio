@@ -39,7 +39,7 @@ $(document).ready(function() {
         $('.tile-img-bg').css({'height':tileWidth+'px'});
 
         // Modal Carousel-Width Resizing
-        var modalWidth = $('.modal-content').width();
+        // var modalWidth = $('.modal-content').width();
         // var modalHeight = .66*modalWidth;
 
         $('.then-gallery').css({'width':modalWidth+'px'});

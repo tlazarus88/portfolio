@@ -242,6 +242,10 @@ body.project .dropdown-content {
 	background-color: var(--mid-green, #00701a);
 }
 
+body.project .dropdown:hover .dropdown-content a:hover {
+	color: var(--deep-green, #00701a);
+}
+
 .dropdown-content a {
 	font-family: 'geomanistregular';
     color: var(--white, #ffffff);
@@ -255,6 +259,7 @@ body.project .dropdown-content {
     max-height: 0px;
     width: 100%;   
     display: none;
+    cursor: pointer;
 }
 
 .dropdown-content a:first-child {
@@ -268,10 +273,7 @@ body.project .dropdown-content {
 .dropdown:hover .dropdown-content a {
 	max-height: 150px;
 	display: block;
-}
-
-.dropdown:hover .dropdown-content a:hover {
-	color: var(--deep-green, #00701a);
+	cursor: pointer;
 }
 
 .dropdown:hover .dropbtn {
@@ -280,6 +282,7 @@ body.project .dropdown-content {
 
 .dropdown-content a:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 #hamburger {
@@ -513,7 +516,7 @@ body.project .dropdown-content {
 
 .flickity-page-dots .dot {
 	height: 4px;
-	width: 40px;
+	width: 20px;
 	margin: 0;
 	border-radius: 0;
 }
@@ -1332,6 +1335,9 @@ footer h4, footer p.caption {
 		width: 38%;
 	}
 
+	.flickity-page-dots .dot {
+		width: 40px;
+	}
 	#e-mail-expand-connect {
 		display: block;
 	}
@@ -1438,6 +1444,14 @@ footer h4, footer p.caption {
 	.flickity-page-dots .dot {
 		height: 8px;
 	 	width: 80px;
+	}
+
+	#then-sm-carousel .flickity-page-dots {
+		bottom: -20px;
+	}
+
+	#then-sm-carousel .flickity-page-dots .dot {
+		width: 40px;
 	}
 
 	#about-me p {
