@@ -488,6 +488,12 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	margin: 0 auto;
 }
 
+#down-arrow {
+	width: 50px;
+	margin: 0 auto;
+	margin-top:30px;
+}
+
 #chase_masters_project .project-page .project-intro #down-arrow {
 	margin-top:30px;
 }
@@ -563,8 +569,14 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	#gold_rush_img_bg {
 		background-image: url("../img/big_tiles/gold_rush_bg");
 	}
+	#chase_masters_img_bg {
+		background-image: url("../img/big_tiles/chase_masters_bg.jpg");
+	}
 	#state_play_img_bg {
 		background-image: url("../img/big_tiles/state_play_bg.jpg");
+	}
+	#myford_fusion_img_bg {
+		background-image: url("../img/big_tiles/myford_fusion_bg.jpg");
 	}
 
 
