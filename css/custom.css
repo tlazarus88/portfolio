@@ -1102,9 +1102,9 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	display: none;
 }
 
-.project-quad-h {
+/*.project-quad-h {
 	transform: translateY(-59px);
-}
+}*/
 
 .project-quad-h ul {
 	text-align: center;
@@ -1231,6 +1231,11 @@ footer h4, footer p.caption {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
+}
+
+#chase_masters_project .parallax_background {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #plx-bg-gold-rush {
@@ -1525,6 +1530,7 @@ footer h4, footer p.caption {
 	.project-quad-h p {
 		max-width: 100%;
 		text-align: center;
+		margin: 0 auto;
 	}
 
 	.project .single-element-text-container {
