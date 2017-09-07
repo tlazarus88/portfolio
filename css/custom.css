@@ -237,6 +237,10 @@ nav p, body.project nav p {
     overflow: hidden;
 }
 
+.dropdown-content .now-dropdown {
+	min-width: 200px;
+}
+
 body.project .dropdown-content {
 	opacity: 1;
 	background-color: var(--mid-green, #00701a);
@@ -257,7 +261,6 @@ body.project .dropdown:hover .dropdown-content a:hover {
     -o-transition: max-height 1000ms ease, color 200ms ease-in-out;
     transition: max-height 1000ms ease, color 200ms ease-in-out;
     max-height: 0px;
-    width: 100%;   
     display: none;
     cursor: pointer;
 }
@@ -267,7 +270,11 @@ body.project .dropdown:hover .dropdown-content a:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    max-height: 150px;
+    max-height: 6000px;
+}
+
+.dropdown:hover .now-dropdown {
+	min-width: 148px;
 }
 
 .dropdown:hover .dropdown-content a {

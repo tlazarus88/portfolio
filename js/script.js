@@ -63,7 +63,6 @@ $(document).ready(function() {
     	// Now Tile Height Resizing
         var tileWidth = $('.tile-img-bg').width();
         $('.tile-img-bg').css({'height':tileWidth+'px'});
-        $('.then-gallery').css({'width':modalWidth+'px'});
     }).resize();
 });
 
