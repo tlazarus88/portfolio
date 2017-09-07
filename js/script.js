@@ -2,6 +2,32 @@
 
 jQuery(document).ready(function($) {
 
+// Then Deep Links
+
+//Index
+
+//Project Pages
+$(function(){
+	var url = window.location.href;
+	
+	if(url.indexOf('?show=editorial-start') != -1 || url.indexOf('&editorial-start') != -1)
+	$(window).bind("load", function(){
+			$.fn.fullpage.moveTo('section3', 1);
+			$('.main-carousel').flickity( 'selectCell', 'editorial-start' );
+		});
+
+    if(url.indexOf('?show=illustration-start') != -1 || url.indexOf('&illustration-start') != -1)
+    	$(window).bind("load", function(){
+			$.fn.fullpage.moveTo('section3', 1);
+			$('#illustration-start-button').click();
+		});
+    if(url.indexOf('?show=mock-start') != -1 || url.indexOf('&mock-start') != -1)
+    	$(window).bind("load", function(){
+			$.fn.fullpage.moveTo('section3', 1);
+			$('#mock-start-button').click();
+		});
+});
+
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
 	$.fn.fullpage.moveSectionDown();
@@ -37,14 +63,7 @@ $(document).ready(function() {
     	// Now Tile Height Resizing
         var tileWidth = $('.tile-img-bg').width();
         $('.tile-img-bg').css({'height':tileWidth+'px'});
-
-        // Modal Carousel-Width Resizing
-        // var modalWidth = $('.modal-content').width();
-        // var modalHeight = .66*modalWidth;
-
         $('.then-gallery').css({'width':modalWidth+'px'});
-        // $('.then-gallery').css({'height':modalHeight+'px'})
-
     }).resize();
 });
 
@@ -216,6 +235,10 @@ $('#fullpage').fullpage({
 	
 	
 });
+
+
+
+
 
 
 });
