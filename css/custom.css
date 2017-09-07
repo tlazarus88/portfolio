@@ -832,6 +832,9 @@ body.project .dropdown:hover .dropdown-content a:hover {
 		max-height: 466.5px;
 		width: auto;
 	}
+	.modal-content .gallery-image.gallery-image-sm {
+		max-width: 600px;
+	}
 
 	.modal .flickity-prev-next-button {
   		display: none;
