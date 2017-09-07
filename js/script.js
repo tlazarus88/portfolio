@@ -5,6 +5,27 @@ jQuery(document).ready(function($) {
 // Then Deep Links
 
 //Index
+	$('#editorial-start-button-nav').on("click", function(){
+			$('#editorial-start-button').click();
+	});
+	$('#illustration-start-button-nav').on("click", function(){
+			$('#illustration-start-button').click();
+	});
+	$('#mock-start-button-nav').on("click", function(){
+			$('#mock-start-button').click();
+	});
+
+	$('#editorial-start-button-hamburger').on("click", function(){
+			$('#editorial-start-button').click();
+	});
+	$('#illustration-start-button-hamburger').on("click", function(){
+			$('#illustration-start-button').click();
+	});
+	$('#mock-start-button-hamburger').on("click", function(){
+			$('#mock-start-button').click();
+	});
+
+
 
 //Project Pages
 $(function(){
