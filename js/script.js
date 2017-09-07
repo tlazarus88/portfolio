@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
 	$('#editorial-start-button-hamburger').on("click", function(){
 			$('#editorial-start-button').click();
 	});
+	
 	$('#illustration-start-button-hamburger').on("click", function(){
 			$('#illustration-start-button').click();
 	});
@@ -161,98 +162,47 @@ function onViewport(el, elClass, offset, callback) {
 // Call Fullpage Plugin
 $('#fullpage').fullpage({
 
-	// Background Color Transition
-	onLeave: function(index, nextIndex, direction){
-		var leavingSection = $(this);
+	// Anchor Link Manipulation
+	anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
 
-		if(index == 1 && direction =='down'){
-			$('body').css('background', $("#now").attr("data-color"))
-			$('nav').css('background', $("#now").attr("data-color"));
-			$('#down-label').text('Then');
-		};
+	// Section Stylings
+	afterLoad: function(anchorLink, index){
+		var loadedSection = $(this);
 
-		if(index == 2 && direction =='down'){
-			$('body').css('background', $("#then").attr("data-color"))
-			$('nav').css('background', $("#then").attr("data-color"));
-			$('#down-label').text('About Me')
-		}
-		else if(index == 2 && direction == 'up'){
+		if(index == 1){
 			$('body').css('background', $("#intro").attr("data-color"));
 			$('nav').css('background', $("#intro").attr("data-color"));
 			$('#down-label').text('');
-		};
-
-		if(index == 3 && direction =='down'){
-			$('body').css('background', $("#about-me").attr("data-color"))
-			$('nav').css('background', $("#about-me").attr("data-color"));
-			$('#down-label').text('Connect');
+			$('#down-directional').css('visibility', 'visible');
 		}
-		else if(index == 3 && direction == 'up'){
+
+		if(index == 2){
 			$('body').css('background', $("#now").attr("data-color"))
 			$('nav').css('background', $("#now").attr("data-color"));
 			$('#down-label').text('Then');
-		};
-
-		if(index == 4 && direction =='down'){
-			$('body').css('background', $("#connect").attr("data-color"))
-			$('nav').css('background', $("#connect").attr("data-color"));
-			$('#down-directional').css('visibility', 'hidden');
-
+			$('#down-directional').css('visibility', 'visible');
 		}
-		else if(index == 4 && direction == 'up'){
+
+		if(index == 3){
 			$('body').css('background', $("#then").attr("data-color"))
 			$('nav').css('background', $("#then").attr("data-color"));
 			$('#down-label').text('About Me');
-		};
+			$('#down-directional').css('visibility', 'visible');
+		}
 
-		if(index == 5 && direction == 'up'){
+		if(index == 4){
 			$('body').css('background', $("#about-me").attr("data-color"))
 			$('nav').css('background', $("#about-me").attr("data-color"));
 			$('#down-label').text('Connect');
 			$('#down-directional').css('visibility', 'visible');
-		
-	};
+		}
 
-	// Anchor Link Manipulation
-	anchors: ['section1', 'section2', 'section3', 'section4', 'section5']
+		if(index == 5){
+			$('body').css('background', $("#connect").attr("data-color"))
+			$('nav').css('background', $("#connect").attr("data-color"));
+			$('#down-directional').css('visibility', 'hidden');
+		}
 	}
-
-	// afterLoad: function(anchorLink, index){
-// 	// 	var loadedSection = $(this);
-
-// 	// 	if(index == 1){
-// 	// 		$('body').css('background', $("#intro").attr("data-color"));
-// 	// 		$('nav').css('background', $("#intro").attr("data-color"));
-// 	// 		$('#down-label').text('');
-// 	// 	};
-
-// 	// 	if(index == 2){
-// 	// 		$('body').css('background', $("#now").attr("data-color"))
-// 	// 		$('nav').css('background', $("#now").attr("data-color"));
-// 	// 		$('#down-label').text('Then');
-// 	// 	};
-
-// 	// 	if(index == 3){
-// 	// 		$('body').css('background', $("#then").attr("data-color"))
-// 	// 		$('nav').css('background', $("#then").attr("data-color"));
-// 	// 		$('#down-label').text('About Me')
-// 	// 	};
-
-// 	// 	if(index == 4){
-// 	// 		$('body').css('background', $("#about-me").attr("data-color"))
-// 	// 		$('nav').css('background', $("#about-me").attr("data-color"));
-// 	// 		$('#down-label').text('Connect');
-// 	// 	};
-
-// 	// 	if(index == 5){
-// 	// 		$('body').css('background', $("#connect").attr("data-color"))
-// 	// 		$('nav').css('background', $("#connect").attr("data-color"));
-// 	// 		$('#down-directional').css('visibility', 'hidden');
-// 	// 	};
-
-// 	// },
-
-	
 	
 });
 
