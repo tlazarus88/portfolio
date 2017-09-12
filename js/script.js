@@ -5,28 +5,26 @@ jQuery(document).ready(function($) {
 // Then Deep Links
 
 //Index
-	$('#editorial-start-button-nav').on("click", function(){
-			$('#editorial-start-button').click();
-	});
-	$('#illustration-start-button-nav').on("click", function(){
-			$('#illustration-start-button').click();
-	});
-	$('#mock-start-button-nav').on("click", function(){
-			$('#mock-start-button').click();
-	});
+$('#editorial-start-button-nav').on("click", function(){
+		$('#editorial-start-button').click();
+});
+$('#illustration-start-button-nav').on("click", function(){
+		$('#illustration-start-button').click();
+});
+$('#mock-start-button-nav').on("click", function(){
+		$('#mock-start-button').click();
+});
 
-	$('#editorial-start-button-hamburger').on("click", function(){
-			$('#editorial-start-button').click();
-	});
-	
-	$('#illustration-start-button-hamburger').on("click", function(){
-			$('#illustration-start-button').click();
-	});
-	$('#mock-start-button-hamburger').on("click", function(){
-			$('#mock-start-button').click();
-	});
+$('#editorial-start-button-hamburger').on("click", function(){
+		$('#editorial-start-button').click();
+});
 
-
+$('#illustration-start-button-hamburger').on("click", function(){
+		$('#illustration-start-button').click();
+});
+$('#mock-start-button-hamburger').on("click", function(){
+		$('#mock-start-button').click();
+});
 
 //Project Pages
 $(function(){
@@ -50,58 +48,45 @@ $(function(){
 		});
 });
 
-(function ($) {
+
+$.fn.isOnScreen = function(){
  
-    /**
-    * Tests if a node is positioned within the current viewport.
-    * It does not test any other type of "visibility", like css display,
-    * opacity, presence in the dom, etc - it only considers position.
-    * 
-    * By default, it tests if at least 1 pixel is showing, regardless of
-    * orientation - however an optional argument is accepted, a callback
-    * that is passed the number of pixels visible on each edge - the return
-    * (true of false) of that callback is used instead.
-    */
-    $.fn.isOnScreen = function(test){
- 
-        var height = this.outerHeight();
-        var width = this.outerWidth();
- 
-        if(!width || !height){
-            return false;
-        }
-        
-        var win = $(window);
- 
-        var viewport = {
-            top : win.scrollTop(),
-            left : win.scrollLeft()
-        };
-        viewport.right = viewport.left + win.width();
-        viewport.bottom = viewport.top + win.height();
- 
-        var bounds = this.offset();
-        bounds.right = bounds.left + width;
-        bounds.bottom = bounds.top + height;
-        
-        var showing = {
-          top : viewport.bottom - bounds.top,
-          left: viewport.right - bounds.left,
-          bottom: bounds.bottom - viewport.top,
-          right: bounds.right - viewport.left
-        };
- 
-        if(typeof test == 'function') {
-          return test(showing);
-        }
-        
-        return showing.top > 0
-          && showing.left > 0
-          && showing.right > 0
-          && showing.bottom > 0;
+    var height = this.outerHeight();
+    var width = this.outerWidth();
+
+    if(!width || !height){
+        return false;
+    }
+    
+    var win = $(window);
+
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
     };
- 
-})
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + width;
+    bounds.bottom = bounds.top + height;
+    
+    var showing = {
+      top : viewport.bottom - bounds.top,
+      left: viewport.right - bounds.left,
+      bottom: bounds.bottom - viewport.top,
+      right: bounds.right - viewport.left
+    };
+
+    if(typeof test == 'function') {
+      return test(showing);
+    }
+    
+    return showing.top > 0
+      && showing.left > 0
+      && showing.right > 0
+      && showing.bottom > 0;
+};
 
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
@@ -148,12 +133,13 @@ $('.tile-zoom-btn').click(function(){
 		window.dispatchEvent(new Event('resize'));
     });
     $('#down-directional').css('visibility', 'hidden');
-  	
+    $('.dropdown-content').css('opacity', '1');	
 })
 
 $('.modal-close').click(function(){
 	$('.modal').css('display', 'none');
 	$('#down-directional').css('visibility', 'visible');
+	$('.dropdown-content').css('opacity', '.7')
 })
 
 
