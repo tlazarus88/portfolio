@@ -48,45 +48,26 @@ $(function(){
 		});
 });
 
+// Then Active Scroll Changes
 
-$.fn.isOnScreen = function(){
- 
-    var height = this.outerHeight();
-    var width = this.outerWidth();
+var $carousel = $('#then-sm-carousel').flickity();
+var flkty = $carousel.data('flickity');
 
-    if(!width || !height){
-        return false;
-    }
-    
-    var win = $(window);
-
-    var viewport = {
-        top : win.scrollTop(),
-        left : win.scrollLeft()
-    };
-    viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
-
-    var bounds = this.offset();
-    bounds.right = bounds.left + width;
-    bounds.bottom = bounds.top + height;
-    
-    var showing = {
-      top : viewport.bottom - bounds.top,
-      left: viewport.right - bounds.left,
-      bottom: bounds.bottom - viewport.top,
-      right: bounds.right - viewport.left
-    };
-
-    if(typeof test == 'function') {
-      return test(showing);
-    }
-    
-    return showing.top > 0
-      && showing.left > 0
-      && showing.right > 0
-      && showing.bottom > 0;
-};
+$carousel.on( 'select.flickity', function() {
+  if (flkty.selectedIndex <= 6) {
+  	$('#editorial-start-button').addClass('active');
+	$('#illustration-start-button').removeClass('active');
+	$('#mock-start-button').removeClass('active');
+  } else if (flkty.selectedIndex > 6 && flkty.selectedIndex < 10) {
+  	$('#editorial-start-button').removeClass('active');
+	$('#illustration-start-button').addClass('active');
+	$('#mock-start-button').removeClass('active');
+  } else if (flkty.selectedIndex >= 10) {
+  	$('#editorial-start-button').removeClass('active');
+	$('#illustration-start-button').removeClass('active');
+	$('#mock-start-button').addClass('active');
+  }
+});
 
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
