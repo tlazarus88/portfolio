@@ -60,20 +60,16 @@ $('.then-buttons').on( 'click', '.then-button', function() {
 });
 
 // Hamburger Animation
-$(document).ready(function(){
-	
-	$('#hamburger').click(function(){
-		$(this).toggleClass('open');
-		$('#hamburger-menu').fadeToggle("fast");
-	});
+$('#hamburger').click(function(){
+	$(this).toggleClass('open');
+	$('#hamburger-menu').fadeToggle("fast");
+});
 
-	// Close Hamburger on Internal Links
+// Close Hamburger on Internal Links
 
-	$('.hamburger-link-home').click(function(){
-		$('#hamburger').toggleClass('open');
-		$('#hamburger-menu').fadeToggle("fast");
-	});
-
+$('.hamburger-link-home').click(function(){
+	$('#hamburger').toggleClass('open');
+	$('#hamburger-menu').fadeToggle("fast");
 });
 
 // Javascript Resizing

@@ -427,20 +427,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
  	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
  	<script src="js/backgroundVideo.js"></script>
- 	<script>
-    const backgroundVideo = new BackgroundVideo('.bv-video', {
-      src: [
-        'videos/New_Gold_Rush_Bg.mp4',
-        'videos/New_Gold_Rush_Bg.webm'
-      ],
-      onReady: function () {
-        // Use onReady() to prevent flickers or force loading state
-        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
-        vidParent.classList.add('bv-video-wrap--ready');
-      }
-    });
-  </script>
  	<script src="js/script.js"></script>
+ 	<script>
+	    const backgroundVideo = new BackgroundVideo('.bv-video', {
+	      src: [
+	        'videos/New_Gold_Rush_Bg.mp4',
+	        'videos/New_Gold_Rush_Bg.webm'
+	      ],
+	      onReady: function () {
+	        // Use onReady() to prevent flickers or force loading state
+	        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+	        vidParent.classList.add('bv-video-wrap--ready');
+	      }
+	    });
+  	</script>
 
 
 </body>
