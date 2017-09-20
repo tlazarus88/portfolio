@@ -837,7 +837,7 @@ body.project .dropdown:hover .dropdown-content a:hover {
 
 	.modal-content .gallery-image.single-image {
 		max-height: 466.5px;
-		width: auto;
+		width: 100%;
 	}
 	.modal-content .gallery-image.gallery-image-sm {
 		max-width: 600px;
