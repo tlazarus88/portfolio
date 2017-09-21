@@ -185,6 +185,7 @@ $('#fullpage').fullpage({
 		}
 
 		if(index == 3){
+			window.dispatchEvent(new Event('resize'));
 			$('body').css('background', $("#then").attr("data-color"))
 			$('nav').css('background', $("#then").attr("data-color"));
 			$('#down-label').text('About Me');
