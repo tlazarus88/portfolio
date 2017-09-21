@@ -1059,6 +1059,17 @@ body.project .dropdown:hover .dropdown-content a:hover {
 }
 
 .project .mobile-video, .project .mobile-img {
+	display: none;
+	width: 150px;
+	margin: 0 auto;
+	-webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.project .mobile-img {
 	display: block;
 	width: 150px;
 	margin: 0 auto;
@@ -1276,6 +1287,9 @@ footer h4, footer p.caption {
 	background-image: url("../img/chase_masters/chase_rs_accordion_bg.jpg")
 }
 
+.display-hidden {
+	display: block;
+}
 
 
 /* Responsive Design */
@@ -1512,9 +1526,13 @@ footer h4, footer p.caption {
 		visibility: hidden;
 	}
 
-	.project video.desktop-video.mobile-hidden, .project img.desktop-img.mobile-hidden.animated {
+	.project video.desktop-video.mobile-hidden.animated, .project img.desktop-img.mobile-hidden.animated {
 		visibility: visible;
 		display: inline-block;
+	}
+
+	.display-hidden.animated {
+		display: none;
 	}
 
 	.project video.desktop-video, .project img.desktop-img {
@@ -1534,6 +1552,11 @@ footer h4, footer p.caption {
 	}
 	.project .mobile-video.animated {
 		visibility: visible;
+	}
+
+	.project .mobile-img.display-hidden.animated {
+		display: none;
+		visibility: hidden;
 	}
 
 	.project-mobile-pair p, .project-single-element p, .project-quad-h p {
