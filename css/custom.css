@@ -1535,6 +1535,10 @@ footer h4, footer p.caption {
 		display: none;
 	}
 
+	.project img.desktop-img.display-hidden.animated {
+		display: none;
+	}
+
 	.project video.desktop-video, .project img.desktop-img {
 		display: inline-block;
 		width: 65%;
