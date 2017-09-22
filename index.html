@@ -1652,19 +1652,17 @@
 				<h3 class="sec-hed">Connect</h3>
 				<h4>Just do it!</h4>
 				<div id="e-mail-expand-connect">
-					<form name="contactform" method="post" action="php/send_form_email.php">
+					
+					<iframe name="foo" style="display:none;"></iframe>
+			        	<form class="form-container" name="contactform" method="post" action="php/email.php" target='foo'>
+			                <input type="text" id="name" name="name" maxlength="20" placeholder="Your Name">
+			                <input type="text" id="email" name="email" maxlength="50" placeholder="E-mail">
+			                <textarea type="text" id="message" name="message" placeholder="Your message..."></textarea>
+			                <div class="submit-container">
+			                    <input class="submit-button" id="submit" type="submit" value="Email Me">
+			                </div>
+			            </form>
 
-						<input type="text" id="name" name="name" maxlength="20" placeholder="Your Name">
-
-						<input type="text" id="email" name="email" maxlength="50" placeholder="E-mail">
-						
-						<input type="text" id="subject" name="subject" placeholder="Subject">
-
-						<textarea type="text" id="message" name="message" placeholder="Your message..."></textarea>
-
-						<input id="submit" type="submit" value="Submit">
-
-					</form>
 				</div>
 				<ul id="connect-options">
 					<li id="e-mail-collapse-connect">
@@ -1759,6 +1757,14 @@
  	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
  	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
  	<script src="js/script.js"></script>
+ 	<script type="text/javascript">
+        //post email submission alert        
+        $(document).ready(function() {
+            $(".submit-button").on('click', function() {
+                alert('Email Successfully Sent! Thank You');
+            });
+        });
+    </script>
 
 
 </body>
