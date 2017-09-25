@@ -884,10 +884,11 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	max-height: 200px;
 	overflow: hidden;
 	margin: 0 auto;
+	text-align: center;
 }
 
 #about-me img {
-	width: 100%;
+	width: 80%;
 	height: auto;
 }
 
@@ -920,7 +921,7 @@ body.project .dropdown:hover .dropdown-content a:hover {
 
 .connect-icon {
 	display: inline-block;
-	width: 45%;
+	width: 35%;
 	height: auto;
 	min-height: 45px;
 	margin-right: 18px;
@@ -951,11 +952,6 @@ body.project .dropdown:hover .dropdown-content a:hover {
 #e-mail-expand-connect label#e-mail-label {
 	padding-top: 10px;
 }
-
-
-/*#e-mail-expand-connect input#name, #e-mail-expand-connect input#email {
-	text-indent: 32px;
-}*/
 
 #e-mail-expand-connect input, #e-mail-expand-connect textarea {
 	border: none;
