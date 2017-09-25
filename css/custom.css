@@ -1113,6 +1113,10 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	visibility: hidden;
 }
 
+.bv-video-wrap.bv-video-wrap-0.bv-video-wrap--ready {
+	display: none;
+}
+
 .project div.hr {
 	margin-left: 15%;
 	margin-bottom: 40px;
@@ -1527,6 +1531,10 @@ footer h4, footer p.caption {
 		display: inline-block;
 	}
 
+	.bv-video-wrap.bv-video-wrap-0.bv-video-wrap--ready {
+		display: block;
+	}
+
 	.display-hidden.animated {
 		display: none;
 	}
@@ -1599,6 +1607,10 @@ footer h4, footer p.caption {
 
 	.parallax_background {
 		margin-bottom: 40px;
+	}
+
+	.display-hidden {
+		display: none;
 	}
 
 	.project section.more-work {
