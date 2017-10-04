@@ -836,8 +836,8 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	}
 
 	.modal-content .gallery-image.single-image {
-		max-height: 466.5px;
-		width: 100%;
+		max-height: 200px;
+		width: auto;
 	}
 	.modal-content .gallery-image.gallery-image-sm {
 		max-width: 600px;
@@ -1506,6 +1506,11 @@ footer h4, footer p.caption {
 
 	#then-sm-carousel .flickity-page-dots .dot {
 		width: 40px;
+	}
+
+	.modal-content .gallery-image.single-image {
+		max-height: 466.5px;
+		width: auto;
 	}
 
 	#about-me p {
