@@ -579,6 +579,9 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	#chase_masters_img_bg {
 		background-image: url("../img/big_tiles/chase_masters_bg.jpg");
 	}
+	#technology_driving_performance_img_bg {
+		background-image: url("../img/big_tiles/technology_driving_performance_bg.jpg");
+	}
 	#state_play_img_bg {
 		background-image: url("../img/big_tiles/state_play_bg.jpg");
 	}
@@ -1025,6 +1028,10 @@ body.project .dropdown:hover .dropdown-content a:hover {
 		background-image: url("../img/new_gold_rush/gold_rush_header.jpg");
 	}
 
+	#technology_driving_performance_project div.intro-img {
+		background-image: url("../img/technology_driving_performance/technology_driving_performance_header.jpg");
+	}
+
 	#state_of_play_project div.intro-img {
 		background-image: url("../img/state_of_play/state_play_header.jpg");
 	}
@@ -1287,6 +1294,10 @@ footer h4, footer p.caption {
 
 #plx-bg-chase-masters-3 {
 	background-image: url("../img/chase_masters/chase_rs_accordion_bg.jpg")
+}
+
+#plx-bg-technology-driving-performance {
+	background-image: url("../img/technology_driving_performance/technology_driving_performance_video_bg.jpg")
 }
 
 .display-hidden {
