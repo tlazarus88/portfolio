@@ -585,6 +585,9 @@ body.project .dropdown:hover .dropdown-content a:hover {
 	#state_play_img_bg {
 		background-image: url("../img/big_tiles/state_play_bg.jpg");
 	}
+	#nommery_img_bg {
+		background-image: url("../img/big_tiles/nommery_bg.jpg");
+	}
 	#myford_fusion_img_bg {
 		background-image: url("../img/big_tiles/myford_fusion_bg.jpg");
 	}
@@ -1036,6 +1039,10 @@ body.project .dropdown:hover .dropdown-content a:hover {
 		background-image: url("../img/state_of_play/state_play_header.jpg");
 	}
 
+	#nommery_redesign_project div.intro-img {
+		background-image: url("../img/nommery_redesign/nommery_header.jpg");
+	}
+
 	#myford_fusion_project div.intro-img {
 		background-image: url("../img/myford_fusion/myford_fusion_header.jpg");
 	}
@@ -1294,6 +1301,10 @@ footer h4, footer p.caption {
 
 #plx-bg-chase-masters-3 {
 	background-image: url("../img/chase_masters/chase_rs_accordion_bg.jpg")
+}
+
+#plx-bg-nommery-redesign {
+	background-image: url("../img/nommery_redesign/nommery_bg.jpg")
 }
 
 #plx-bg-technology-driving-performance {
