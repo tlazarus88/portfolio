@@ -48,6 +48,17 @@ $(function(){
 		});
 });
 
+
+
+if($("#nommery_redesign_project").length == 1) {
+
+	var imageWidth = $('div.desktop-img').width();
+	 $('div.desktop-img').css({'height':(0.83625*imageWidth)+'px'});
+	// $(window).resize(function() {
+ //        $('.tile-img-bg').css({'height':(0.83625*imageWidth)+'px'});
+ //    }).resize();
+}
+
 // Down Arrow Functionality	
 $('#down-directional').click(function(){
 	$.fn.fullpage.moveSectionDown();
