@@ -1232,28 +1232,6 @@ body.project .dropdown:hover .dropdown-content a:hover {
     animation-duration: 6s;
 }
 
-@-webkit-keyframes fade {
-    0% {opacity: 1;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
-@keyframes fade {
-    0% {opacity: 1;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@-webkit-keyframes fade2 {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
-@keyframes fade2 {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
 #nommery-replace-img {
 	opacity:0;
 	-webkit-animation-delay: 3s;
@@ -1849,6 +1827,28 @@ footer h4, footer p.caption {
 
 
 /* Animations */
+@-webkit-keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes fade2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fade2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 .bounce {
 	-webkit-animation-name: bounce;
 	-moz-animation-name: bounce;
